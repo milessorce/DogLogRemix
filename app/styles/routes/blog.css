@@ -1,0 +1,131 @@
+.section-container--blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  .section-container--blog .section-header {
+    opacity: 1;
+  }
+
+.article {
+  display: block;
+  padding: 1rem;
+  margin-bottom: 4rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  max-width: 44rem;
+}
+
+.article__heading {
+    color: #333;
+    margin: 0;
+    font-size: 2rem;
+    line-height: 2.875rem;
+    font-weight: 300;
+    text-align: left;
+    padding-top: 0.5rem;
+    text-transform: none;
+  }
+
+.article__heading:hover {
+      text-decoration: underline;
+    }
+
+.article__image {
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+.article__link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+  }
+
+.article__link:active,
+    .article__link:visited {
+      color: #333
+    }
+
+.article__author {
+    color: #333;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+  }
+
+.article__author:active,
+    .article__author:visited {
+      color: #333;
+    }
+
+.article__author:hover {
+      text-decoration: underline;
+    }
+
+.article__author-logo {
+      border-radius: 50%;
+      height: 1.75rem;
+      margin-right: 0.75rem;
+    }
+
+.article__description {
+    text-align: left;
+    display: -moz-box;
+    display: -webkit-box;
+    display: box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    overflow: hidden;
+  }
+
+.article__medium-link {
+    display: flex;
+  }
+
+.skeleton:empty {
+  height: 3.5rem;
+  margin-top: 1rem;
+  background-image:
+    linear-gradient( 100deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 80% ),
+    linear-gradient( lightgray 16px, transparent 0 ),
+    linear-gradient( lightgray 16px, transparent 0 );
+  background-repeat: repeat-y;
+  background-size:
+    50px 100%,
+    100% 100%,
+    100% 100%;
+  background-position:
+    0 0,
+    0 0,
+    0 36px,
+    0 72px,
+    0 108px;
+  -webkit-animation: shine 1s infinite;
+          animation: shine 1s infinite;
+}
+
+@-webkit-keyframes shine {
+  to {
+    background-position:
+      100% 0,
+      0 0,
+      0 36px,
+      0 72px,
+      0 108px
+  }
+}
+
+@keyframes shine {
+  to {
+    background-position:
+      100% 0,
+      0 0,
+      0 36px,
+      0 72px,
+      0 108px
+  }
+}

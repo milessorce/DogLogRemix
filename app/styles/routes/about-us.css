@@ -1,0 +1,97 @@
+.section--our-family {
+  padding-top: 6rem;
+}
+.section--our-family .section-container {
+  -webkit-animation: fadeIn 1.5s;
+          animation: fadeIn 1.5s;
+}
+@media all and (min-width: 1200px) {
+  .section--our-family .section-container {
+    width: 72rem;
+  }
+}
+.section--our-family .section-container--our-family {
+  padding-bottom: 2rem;
+}
+.section--our-family .section-container--our-story {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 0.0625rem solid #eeeeee;
+}
+.section--our-family .section-container--our-story .our-story-image-container img {
+  border-radius: 0.25rem;
+  width: 80%;
+  margin: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.section--our-family .section-container--our-story .our-story-container {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section--our-family .section-container--our-story .our-story-container .go-fund-me {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.75rem;
+}
+.section--our-family .section-container--our-story .our-story-container .go-fund-me-link {
+  margin-left: 0.25rem;
+}
+.section--our-family .section-container--our-story .our-story-container .go-fund-me-button {
+  width: 14rem;
+  height: 4rem;
+  background-color: #a5352f;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 1.5rem;
+  transition: background-color ease-in 0.15s;
+}
+.section--our-family .section-container--our-story .our-story-container .go-fund-me-button:focus {
+  outline: none;
+}
+.section--our-family .section-container--our-story .our-story-container .go-fund-me-button:hover {
+  background-color: #8a2d28;
+}
+.section--our-family .section-container .headshots-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.section--our-family .section-container .headshots-container .headshot-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  margin: 1rem;
+  background: white;
+  text-decoration: none;
+}
+.section--our-family .section-container .headshots-container .headshot-container p {
+  color: #a5352f;
+}
+.section--our-family .section-container .headshots-container .headshot-container p.name {
+  margin-bottom: 0;
+  margin-top: 0.125rem;
+  font-weight: 600;
+  color: #a5352f;
+}
+.section--our-family .section-container .headshots-container .headshot-container p.title {
+  margin: 0 0 1rem;
+}
+.section--our-family .section-container .headshots-container .headshot-container img {
+  width: 15rem;
+  border-radius: 0.25rem 0.25rem 0 0;
+  border: 0.5rem solid white;
+}
+@media all and (max-width: 992px) {
+  .section--our-family .section-container .headshots-container .headshot-container img {
+    width: 16rem;
+  }
+}
+@media all and (max-width: 631px) {
+  .section--our-family .section-container .headshots-container .headshot-container img {
+    width: 18rem;
+  }
+}
