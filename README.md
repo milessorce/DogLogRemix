@@ -1,54 +1,39 @@
-# Welcome to Remix!
-
-- [Remix Docs](https://docs.remix.run)
-- [Customer Dashboard](https://remix.run/dashboard)
+# DogLog Remix
 
 ## Development
 
-From your terminal:
+Install all dependencies using `npm`:
 
 ```sh
-npm run dev
+$ npm install
 ```
 
-This starts your app in development mode, rebuilding assets on file changes.
-
-## Deployment
-
-First, build your app for production:
+Once everything is installed, start the app in development mode with the following command:
 
 ```sh
-npm run build
+$ npm run dev
 ```
 
-Then run the app in production mode:
+Run postCSS using the following command:
+```sh
+$ npm run css:watch
+```
+
+## Production
+
+To run the app in production mode, you'll need to build it first.
 
 ```sh
-npm start
+$ npm run build
+$ npm start
 ```
 
-Now you'll need to pick a host to deploy it to.
+This will start a single HTTP server process that will serve the app from the files generated in the build step.
 
-### DIY
+## Project Structure
 
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
+All application source code is found in the `app` directory. This includes your application entry points for both server rendering (see `app/entry-server.ts`) and the browser (see `app/entry-browser.ts`), as well as your root component and routes (see `app/App.tsx` and `app/routes`).
 
-Make sure to deploy the output of `remix build`
+Everything in the `public` directory is served by `express.static`.
 
-- `build/`
-- `public/build/`
-
-### Using a Template
-
-When you ran `npm init remix` there were a few choices for hosting. You can run that again to create a new project, then copy over your `app/` folder to the new project that's pre-configured for your target server.
-
-```sh
-cd ..
-# create a new project, and pick a pre-configured host
-npm init remix
-cd my-new-remix-app
-# remove the new project's app (not the old one!)
-rm -rf app
-# copy your app over
-cp -R ../my-old-remix-app/app app
-```
+All styles live in the `styles` directory. PostCSS will add the output `css` files to the `app` directory. For global styles, add styles to `styles/global.css`. Otherwise, add styles to the route-specific `css` file.
