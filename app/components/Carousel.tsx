@@ -70,10 +70,10 @@ function Carousel ({ items, dynamicHeight }: CarouselProps) {
         dynamicHeight={ dynamicHeight }
         interval={ 99999999 } // there seems to be a bug that causes autoPlay even when set to false
       >
-        { items.map((item) => (
+        { items.map((item, i) => (
           <div key={ item.imageSrc || item.text }>
             { item.imageSrc ? <img className="screenshot" src={ item.imageSrc } loading="lazy"></img> : null }
-            { item.text && <span className="carousel-item-text">
+            { item.text && <span className="carousel-item-text" id={ `slide-text-${ i }` }>
               { item.text }
               { item.author && <span className="carousel-item-text--author">— { item.author } —</span> }
             </span> }
@@ -88,7 +88,7 @@ function Carousel ({ items, dynamicHeight }: CarouselProps) {
           tabIndex={ -1 }
           suppressHydrationWarning
         >
-          <i className="fas fa-chevron-left left-arrow"></i>
+          <i className="fas fa-chevron-left left-arrow" aria-hidden="true"></i>
         </button>
         {
           items.map((item, i) => (
@@ -102,6 +102,8 @@ function Carousel ({ items, dynamicHeight }: CarouselProps) {
               key={ item.imageSrc || item.text }
               suppressHydrationWarning
               data-index={ i }
+              aria-label={ `Slide ${ i + 1 }` }
+              aria-describedby={ `slide-text-${ i }` }
             >
             </button>
           ))

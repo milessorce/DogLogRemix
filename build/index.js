@@ -179,14 +179,15 @@ function Carousel({items, dynamicHeight}) {
     showStatus: false,
     dynamicHeight,
     interval: 99999999
-  }, items.map((item) => /* @__PURE__ */ React.createElement("div", {
+  }, items.map((item, i) => /* @__PURE__ */ React.createElement("div", {
     key: item.imageSrc || item.text
   }, item.imageSrc ? /* @__PURE__ */ React.createElement("img", {
     className: "screenshot",
     src: item.imageSrc,
     loading: "lazy"
   }) : null, item.text && /* @__PURE__ */ React.createElement("span", {
-    className: "carousel-item-text"
+    className: "carousel-item-text",
+    id: `slide-text-${i}`
   }, item.text, item.author && /* @__PURE__ */ React.createElement("span", {
     className: "carousel-item-text--author"
   }, "\u2014 ", item.author, " \u2014"))))), /* @__PURE__ */ React.createElement("div", {
@@ -198,7 +199,8 @@ function Carousel({items, dynamicHeight}) {
     tabIndex: -1,
     suppressHydrationWarning: true
   }, /* @__PURE__ */ React.createElement("i", {
-    className: "fas fa-chevron-left left-arrow"
+    className: "fas fa-chevron-left left-arrow",
+    "aria-hidden": "true"
   })), items.map((item, i) => /* @__PURE__ */ React.createElement("button", {
     className: `carousel-dot ${activeIndex === i ? "carousel-dot--active " : ""} ${isMobile ? "carousel-dot--is-mobile" : ""}`,
     tabIndex: activeIndex === i ? void 0 : -1,
@@ -208,7 +210,9 @@ function Carousel({items, dynamicHeight}) {
     ref: (el) => carouselDotsRef.current[i] = el,
     key: item.imageSrc || item.text,
     suppressHydrationWarning: true,
-    "data-index": i
+    "data-index": i,
+    "aria-label": `Slide ${i + 1}`,
+    "aria-describedby": `slide-text-${i}`
   })), /* @__PURE__ */ React.createElement("button", {
     className: `carousel-dot-arrow carousel-dot-arrow--right right-arrow ${isMobile ? "carousel-dot-arrow--is-mobile" : ""}`,
     onClick: () => handleArrowClick("right"),
@@ -279,7 +283,8 @@ function Features() {
   }, /* @__PURE__ */ React.createElement("img", {
     className: "features-screenshot",
     src: "https://s3-us-west-1.amazonaws.com/doglog-media/features-screenshot.png",
-    loading: "lazy"
+    loading: "lazy",
+    alt: "Features screenshot"
   })))));
 }
 
@@ -306,34 +311,41 @@ function MoreFeatures() {
   }, /* @__PURE__ */ React.createElement("div", {
     className: "features-icon-list-item fadeIn fadeIn--left"
   }, /* @__PURE__ */ React.createElement("i", {
-    className: "icon material-icons"
+    className: "icon material-icons",
+    "aria-hidden": "true"
   }, "photo_camera"), /* @__PURE__ */ React.createElement("h5", null, "Save photos to your feed"), /* @__PURE__ */ React.createElement("p", null, "Photograph events and log your pet's life with photos.")), /* @__PURE__ */ React.createElement("div", {
     className: "features-icon-list-item fadeIn fadeIn--right"
   }, /* @__PURE__ */ React.createElement("i", {
-    className: "icon material-icons"
+    className: "icon material-icons",
+    "aria-hidden": "true"
   }, "thumb_up"), /* @__PURE__ */ React.createElement("h5", null, "Like & Comment"), /* @__PURE__ */ React.createElement("p", null, "Keep in touch about all of your dog's activities in the Feed.")), /* @__PURE__ */ React.createElement("div", {
     className: "features-icon-list-item features-icon-list-item--connect fadeIn fadeIn--left"
   }, /* @__PURE__ */ React.createElement("i", {
-    className: "icon material-icons"
+    className: "icon material-icons",
+    "aria-hidden": "true"
   }, "people"), /* @__PURE__ */ React.createElement("h5", null, "Connect all pet caretakers"), /* @__PURE__ */ React.createElement("p", null, "Invite family members, friends, vets, walkers, and sitters.")), /* @__PURE__ */ React.createElement("div", {
     className: "features-icon-list-item fadeIn fadeIn--right"
   }, /* @__PURE__ */ React.createElement("i", {
-    className: "icon icon--health material-icons"
+    className: "icon icon--health material-icons",
+    "aria-hidden": "true"
   }, "timeline"), /* @__PURE__ */ React.createElement("h5", null, "Long-term health tracking"), /* @__PURE__ */ React.createElement("p", null, "Aggregate all health and behavioral records in one place.")), /* @__PURE__ */ React.createElement("div", {
     className: "features-icon-list-item features-icon-list-item--notifications fadeIn fadeIn--left"
   }, /* @__PURE__ */ React.createElement("i", {
-    className: "icon material-icons"
+    className: "icon material-icons",
+    "aria-hidden": "true"
   }, "notifications"), /* @__PURE__ */ React.createElement("h5", null, "Event Notification"), /* @__PURE__ */ React.createElement("p", null, "Stay up to date on your pet's day.")), /* @__PURE__ */ React.createElement("div", {
     className: "features-icon-list-item features-icon-list-item--tracking fadeIn fadeIn--right"
   }, /* @__PURE__ */ React.createElement("img", {
     src: "https://s3-us-west-1.amazonaws.com/doglog-media/DogLogIconInverted.png",
     className: "icon icon--tracking",
-    loading: "lazy"
+    loading: "lazy",
+    "aria-hidden": "true"
   }), /* @__PURE__ */ React.createElement("h5", null, "Multi-pet tracking"), /* @__PURE__ */ React.createElement("p", null, "Track each of your pets' information together in one Pack.")))), /* @__PURE__ */ React.createElement("div", {
     className: "more-features-screenshot-container fadeIn fadeIn--screenshot"
   }, /* @__PURE__ */ React.createElement("img", {
     src: "https://s3-us-west-1.amazonaws.com/doglog-media/features-screenshot-2.png",
-    loading: "lazy"
+    loading: "lazy",
+    alt: "Features screenshot"
   })))));
 }
 
@@ -441,7 +453,8 @@ function Hero() {
     ref: containerRef
   }, /* @__PURE__ */ React.createElement("img", {
     className: "header-image",
-    src: "https://s3-us-west-1.amazonaws.com/doglog-media/DogLogIconLarge_White.png"
+    src: "https://s3-us-west-1.amazonaws.com/doglog-media/DogLogIconLarge_White.png",
+    alt: "DogLog"
   }), /* @__PURE__ */ React.createElement("h1", {
     className: "header-headline"
   }, "Track and coordinate your pet's activities and health"), /* @__PURE__ */ React.createElement("div", {
@@ -450,20 +463,25 @@ function Hero() {
     className: "header-app-store-container"
   }, /* @__PURE__ */ React.createElement("a", {
     className: "app-icon app-icon--app-store",
-    href: "https://itunes.apple.com/us/app/doglog-track-your-pets-life/id1229529595?mt=8"
+    href: "https://itunes.apple.com/us/app/doglog-track-your-pets-life/id1229529595?mt=8",
+    "aria-label": "Get the app on the Apple App Store"
   }, /* @__PURE__ */ React.createElement("img", {
-    src: "https://s3-us-west-1.amazonaws.com/doglog-media/badgeappstore.png"
+    src: "https://s3-us-west-1.amazonaws.com/doglog-media/badgeappstore.png",
+    alt: ""
   })), /* @__PURE__ */ React.createElement("a", {
     className: "app-icon app-icon--android-store",
-    href: "https://play.google.com/store/apps/details?id=com.mobikode.dog"
+    href: "https://play.google.com/store/apps/details?id=com.mobikode.dog",
+    "aria-label": "Get the app on the Google Play Store"
   }, /* @__PURE__ */ React.createElement("img", {
-    src: "https://s3-us-west-1.amazonaws.com/doglog-media/badgegoogleplay.png"
+    src: "https://s3-us-west-1.amazonaws.com/doglog-media/badgegoogleplay.png",
+    alt: ""
   }))))), /* @__PURE__ */ React.createElement("button", {
     className: `scroll-button ${!isScrollButtonVisible && "fadeOut"}`,
     onClick: () => window.scrollTo({top: window.innerHeight, left: 0, behavior: "smooth"}),
-    "aria-label": "scroll down"
+    "aria-label": "Scroll down to Features"
   }, /* @__PURE__ */ React.createElement("img", {
-    src: "https://s3-us-west-1.amazonaws.com/doglog-media/down-icon.png"
+    src: "https://s3-us-west-1.amazonaws.com/doglog-media/down-icon.png",
+    alt: ""
   }))));
 }
 
@@ -784,7 +802,7 @@ __export(about_us_exports, {
 });
 
 // app/styles/routes/about-us.css
-var about_us_default = "/build/_assets/about-us-DS4X7HJH.css";
+var about_us_default = "/build/_assets/about-us-QRWUNTMV.css";
 
 // route-module:/Users/macbookpro/Desktop/Projects/DogLog Repos/doglog-remix-0.17/app/routes/about-us.tsx
 var links5 = () => {
@@ -866,24 +884,25 @@ function AboutUs() {
     className: "our-story-image-container"
   }, /* @__PURE__ */ React.createElement("img", {
     src: "https://s3-us-west-1.amazonaws.com/doglog-media/lynn-cali.jpg",
-    loading: "lazy"
+    loading: "lazy",
+    alt: "Founder Lynn Marks and her dog Cali"
   })), /* @__PURE__ */ React.createElement("div", {
     className: "our-story-container"
   }, /* @__PURE__ */ React.createElement("p", null, "DogLog was inspired by our family\u2019s life in San Francisco. We needed a system to coordinate caring for our dog, Joy. We wanted to ensure that she never went too long without being taken outside, or suceeded in tricking us into giving her double feedings. We needed an easier way to verify what Joy had and hadn\u2019t done yet. After attempting to keep a log with sticky notes and texts, we developed DogLog to keep all dog-related information in one centralized place that was accessible by all family members. Now, we use DogLog to track Cali's (our puppy) health, feedings, and walks."), /* @__PURE__ */ React.createElement("h3", {
     className: "go-fund-me"
   }, "Help us improve DogLog"), /* @__PURE__ */ React.createElement("p", null, "DogLog has been entirely self-funded by our dog-loving family. We offer DogLog as a free service because we want to help pet owners everywhere provide the best possible care for their pets. You can help us build new features, grow the DogLog community, and make it easier to care for your pets by making a contribution today."), /* @__PURE__ */ React.createElement("a", {
-    className: "go-fund-me-link",
-    href: "https://www.gofundme.com/f/doglogapp"
-  }, /* @__PURE__ */ React.createElement("button", {
-    className: "go-fund-me-button"
-  }, "Contribute"))))));
+    className: "go-fund-me-link go-fund-me-button",
+    href: "https://www.gofundme.com/f/doglogapp",
+    "aria-label": "Contribute to DogLog's GoFundMe"
+  }, "Contribute")))));
 }
 function Tile({name, title, photoUrl, linkedInUrl}) {
   const content = [
     /* @__PURE__ */ React.createElement("img", {
       src: photoUrl,
       loading: "lazy",
-      key: photoUrl
+      key: photoUrl,
+      alt: ""
     }),
     /* @__PURE__ */ React.createElement("p", {
       className: "name",
@@ -1024,7 +1043,7 @@ function useEnvDetection(navigator2) {
 }
 
 // app/styles/routes/index.css
-var routes_default = "/build/_assets/index-RANVCMIO.css";
+var routes_default = "/build/_assets/index-KJ4HF2W6.css";
 
 // route-module:/Users/macbookpro/Desktop/Projects/DogLog Repos/doglog-remix-0.17/app/routes/index.tsx
 var import_react14 = __toModule(require("react"));

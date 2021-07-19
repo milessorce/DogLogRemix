@@ -1,5 +1,5 @@
 {
-  "version": "c1520b32",
+  "version": "3957fab8",
   "entry": {
     "module": "/build/entry.client-2B7WAZ4P.js",
     "imports": [
@@ -13,9 +13,9 @@
     "root": {
       "id": "root",
       "path": "/",
-      "module": "/build/root-BNZOVUDP.js",
+      "module": "/build/root-OARBB65D.js",
       "imports": [
-        "/build/_shared/chunk-2LV3OA6C.js"
+        "/build/_shared/chunk-PHJN6BDZ.js"
       ],
       "hasAction": false,
       "hasLoader": false
@@ -34,7 +34,7 @@
       "parentId": "root",
       "path": "about-us",
       "caseSensitive": false,
-      "module": "/build/routes/about-us-YYOLGI3Z.js",
+      "module": "/build/routes/about-us-LN5E2GJ7.js",
       "hasAction": false,
       "hasLoader": false
     },
@@ -43,7 +43,7 @@
       "parentId": "root",
       "path": "blog",
       "caseSensitive": false,
-      "module": "/build/routes/blog-RIGQJKRP.js",
+      "module": "/build/routes/blog-I76YAWFW.js",
       "hasAction": false,
       "hasLoader": true
     },
@@ -52,10 +52,10 @@
       "parentId": "root",
       "path": "/",
       "caseSensitive": false,
-      "module": "/build/routes/index-3HWYVCDZ.js",
+      "module": "/build/routes/index-NQON2GYC.js",
       "hasAction": false,
       "hasLoader": false
     }
   },
-  "url": "/build/manifest-C1520B32.js"
+  "url": "/build/manifest-3957FAB8.js"
 }

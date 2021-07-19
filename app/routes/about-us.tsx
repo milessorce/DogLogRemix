@@ -74,7 +74,7 @@ export default function AboutUs () {
           <div className="section-container section-container--our-story">
             <h2 className="section-header fadeIn">Our Story</h2>
             <div className="our-story-image-container">
-              <img src="https://s3-us-west-1.amazonaws.com/doglog-media/lynn-cali.jpg" loading="lazy" />
+              <img src="https://s3-us-west-1.amazonaws.com/doglog-media/lynn-cali.jpg" loading="lazy" alt="Founder Lynn Marks and her dog Cali" />
             </div>
             <div className="our-story-container">
               <p>
@@ -88,8 +88,12 @@ export default function AboutUs () {
               <p>
                 DogLog has been entirely self-funded by our dog-loving family. We offer DogLog as a free service because we want to help pet owners everywhere provide the best possible care for their pets. You can help us build new features, grow the DogLog community, and make it easier to care for your pets by making a contribution today.
               </p>
-              <a className="go-fund-me-link" href="https://www.gofundme.com/f/doglogapp">
-                <button className="go-fund-me-button">Contribute</button>
+              <a
+                className="go-fund-me-link go-fund-me-button"
+                href="https://www.gofundme.com/f/doglogapp"
+                aria-label="Contribute to DogLog's GoFundMe"
+              >
+                Contribute
               </a>
             </div>
           </div>
@@ -107,7 +111,7 @@ interface TileProps {
 
 function Tile({ name, title, photoUrl, linkedInUrl}: TileProps) {
   const content = [
-    <img src={ photoUrl } loading="lazy" key={ photoUrl } />,
+    <img src={ photoUrl } loading="lazy" key={ photoUrl } alt="" />,
     <p className="name" key={ name }>{ name }</p>,
     <p className="title" key={ title }>{ title }</p>
   ];

@@ -36,10 +36,6 @@
           font-size: 1.75rem;
         }
   .section--our-family .section-container--our-story .our-story-container .go-fund-me-button {
-            text-decoration: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             width: 14rem;
             height: 4rem;
             background-color: #a5352f;
@@ -66,12 +62,7 @@
         margin: 1rem;
         background: rgb(255,255,255);
         text-decoration: none;
-        will-change: transform;
-        transition: transform 0.25s ease;
       }
-  .section--our-family .section-container .headshots-container .headshot-container:hover {
-          transform: scale(1.05);
-        }
   .section--our-family .section-container .headshots-container .headshot-container p {
           color: #a5352f;
         }

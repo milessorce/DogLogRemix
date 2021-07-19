@@ -36,7 +36,12 @@ export default function Features() {
             </li>
           </ul>
           <div className="features-column features-column--screenshot">
-            <img className="features-screenshot" src="https://s3-us-west-1.amazonaws.com/doglog-media/features-screenshot.png" loading="lazy" />
+            <img
+              className="features-screenshot"
+              src="https://s3-us-west-1.amazonaws.com/doglog-media/features-screenshot.png"
+              loading="lazy"
+              alt="Features screenshot"
+            />
           </div>
         </div>
       </div>
