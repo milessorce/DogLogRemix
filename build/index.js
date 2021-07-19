@@ -740,6 +740,17 @@ function Document({children}) {
     href: "https://use.fontawesome.com/releases/v5.8.1/css/all.css",
     integrity: "sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf",
     crossOrigin: "anonymous"
+  }), /* @__PURE__ */ React.createElement("script", {
+    async: true,
+    src: "https://www.googletagmanager.com/gtag/js?id=G-863XK73Y70"
+  }), /* @__PURE__ */ React.createElement("script", {
+    dangerouslySetInnerHTML: {
+      __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-863XK73Y70');`
+    }
   }), /* @__PURE__ */ React.createElement(import_remix2.Meta, null), /* @__PURE__ */ React.createElement(import_remix2.Links, null)), /* @__PURE__ */ React.createElement("body", null, children, /* @__PURE__ */ React.createElement(import_remix2.Scripts, null), process.env.NODE_ENV === "development" && /* @__PURE__ */ React.createElement(import_remix2.LiveReload, null)));
 }
 function App() {

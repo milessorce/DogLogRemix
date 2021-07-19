@@ -1,5 +1,5 @@
 {
-  "version": "3957fab8",
+  "version": "4d99717a",
   "entry": {
     "module": "/build/entry.client-2B7WAZ4P.js",
     "imports": [
@@ -13,7 +13,7 @@
     "root": {
       "id": "root",
       "path": "/",
-      "module": "/build/root-OARBB65D.js",
+      "module": "/build/root-O34Y4GEF.js",
       "imports": [
         "/build/_shared/chunk-PHJN6BDZ.js"
       ],
@@ -57,5 +57,5 @@
       "hasLoader": false
     }
   },
-  "url": "/build/manifest-3957FAB8.js"
+  "url": "/build/manifest-4D99717A.js"
 }
