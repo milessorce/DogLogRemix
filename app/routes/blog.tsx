@@ -17,7 +17,7 @@ export function headers() {
 export let meta: MetaFunction = () => {
   return {
     title: 'DogLog - Blog',
-    description: 'Stories by DogLog App on Medium',
+    description: 'Stories by DogLog App on Medium'
   };
 }
 

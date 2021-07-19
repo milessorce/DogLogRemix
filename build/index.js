@@ -79,9 +79,6 @@ var import_react_router_dom4 = __toModule(require("react-router-dom"));
 
 // app/components/Article.tsx
 var import_react = __toModule(require("react"));
-function shortenText(text, startingPoint, maxLength) {
-  return text.length > maxLength ? text.slice(startingPoint, maxLength) : text;
-}
 function extractContent(str) {
   if (typeof window !== "undefined") {
     const span = document.createElement("span");
@@ -91,7 +88,6 @@ function extractContent(str) {
   return "";
 }
 var Article = (0, import_react.forwardRef)(({feed, post}, ref) => {
-  const description = extractContent(post.description);
   return /* @__PURE__ */ React.createElement("article", {
     className: "article",
     ref
@@ -99,24 +95,25 @@ var Article = (0, import_react.forwardRef)(({feed, post}, ref) => {
     className: "article__link",
     href: post.guid,
     target: "_blank",
-    rel: "noopener noreferrer"
+    rel: "noreferrer"
   }, /* @__PURE__ */ React.createElement("img", {
     className: "article__image",
     src: post.thumbnail,
     alt: "",
     loading: "lazy"
-  }), /* @__PURE__ */ React.createElement("h5", {
-    className: "article__heading"
-  }, shortenText(post.title, 0, 50))), /* @__PURE__ */ React.createElement("p", {
+  }), /* @__PURE__ */ React.createElement("h2", {
+    className: "article__heading",
+    suppressHydrationWarning: true
+  }, post.title)), /* @__PURE__ */ React.createElement("p", {
     className: "article__description skeleton",
     suppressHydrationWarning: true
-  }, description), /* @__PURE__ */ React.createElement("div", {
+  }, extractContent(post.description)), /* @__PURE__ */ React.createElement("div", {
     className: "article__medium-link"
   }, /* @__PURE__ */ React.createElement("a", {
     className: "article__author",
     href: "https://appdoglog.medium.com/",
     target: "_blank",
-    rel: "noopener noreferrer"
+    rel: "noreferrer"
   }, /* @__PURE__ */ React.createElement("img", {
     className: "article__author-logo",
     src: feed.image,
@@ -198,6 +195,7 @@ function Carousel({items, dynamicHeight}) {
     className: `carousel-dot-arrow carousel-dot-arrow--left left-arrow ${isMobile ? "carousel-dot-arrow--is-mobile" : ""}`,
     onClick: () => handleArrowClick("left"),
     "aria-label": "Previous slide",
+    tabIndex: -1,
     suppressHydrationWarning: true
   }, /* @__PURE__ */ React.createElement("i", {
     className: "fas fa-chevron-left left-arrow"
@@ -215,6 +213,7 @@ function Carousel({items, dynamicHeight}) {
     className: `carousel-dot-arrow carousel-dot-arrow--right right-arrow ${isMobile ? "carousel-dot-arrow--is-mobile" : ""}`,
     onClick: () => handleArrowClick("right"),
     "aria-label": "Next slide",
+    tabIndex: -1,
     suppressHydrationWarning: true
   }, /* @__PURE__ */ React.createElement("i", {
     className: "fas fa-chevron-right right-arrow"
@@ -418,7 +417,7 @@ function Hero() {
   const containerRef = (0, import_react7.useRef)(null);
   const featuresSectionObserver = isBrowser ? (0, import_react7.useRef)(new IntersectionObserver(([entry2], observer) => {
     setIsScrollButtonVisible(!entry2.isIntersecting);
-  }, {threshold: 0.1})) : (0, import_react7.useRef)(null);
+  }, {threshold: 0.2})) : (0, import_react7.useRef)(null);
   (0, import_react7.useEffect)(() => {
     var _a;
     const featuresSection = document.getElementById("features");
@@ -445,11 +444,9 @@ function Hero() {
     src: "https://s3-us-west-1.amazonaws.com/doglog-media/DogLogIconLarge_White.png"
   }), /* @__PURE__ */ React.createElement("h1", {
     className: "header-headline"
-  }, "Track your pet\u2019s health and coordinate pet-related tasks"), /* @__PURE__ */ React.createElement("div", {
+  }, "Track and coordinate your pet's activities and health"), /* @__PURE__ */ React.createElement("div", {
     className: "header-subcontainer"
-  }, /* @__PURE__ */ React.createElement("p", {
-    className: "header-subtext"
-  }, " With DogLog, you always know how your dog's day is going. Track and analyze your dog's activities, eating habits, vet appointments, and much more. This information and guidance helps your dog have the happy and healthy life it deserves!"), /* @__PURE__ */ React.createElement("div", {
+  }, /* @__PURE__ */ React.createElement("div", {
     className: "header-app-store-container"
   }, /* @__PURE__ */ React.createElement("a", {
     className: "app-icon app-icon--app-store",
@@ -671,7 +668,7 @@ function ScrollToTop() {
 }
 
 // app/styles/global.css
-var global_default = "/build/_assets/global-USOTQA4J.css";
+var global_default = "/build/_assets/global-HURNJNHQ.css";
 
 // route-module:/Users/macbookpro/Desktop/Projects/DogLog Repos/doglog-remix-0.17/app/root.tsx
 var links3 = () => {
@@ -690,13 +687,32 @@ function Document({children}) {
   }), /* @__PURE__ */ React.createElement("meta", {
     name: "viewport",
     content: "width=device-width,initial-scale=1,viewport-fit=cover"
+  }), /* @__PURE__ */ React.createElement("meta", {
+    name: "keywords",
+    content: "dog, dogs, pet, pets, app, application, petcare, mobile, track, tracking, activities, blog, doglog, log, doge, fetch, rover, walk, walking"
+  }), /* @__PURE__ */ React.createElement("meta", {
+    property: "og:type",
+    content: "website"
+  }), /* @__PURE__ */ React.createElement("meta", {
+    property: "og:title",
+    content: "DogLog: Track and coordinate your pet's activities and health"
+  }), /* @__PURE__ */ React.createElement("meta", {
+    property: "og:description",
+    content: "Organize your pet's life and be the best dog owner you can be. Track medicine, walks, puppy training, and more while sharing photos and reminders for your pets. Share records with family members and vets. Great for puppies and senior dogs."
   }), /* @__PURE__ */ React.createElement("link", {
     rel: "icon",
     type: "image/x-icon",
     href: "https://s3-us-west-1.amazonaws.com/doglog-media/favicon.png"
   }), /* @__PURE__ */ React.createElement("link", {
+    rel: "preconnect",
+    href: "https://fonts.googleapis.com"
+  }), /* @__PURE__ */ React.createElement("link", {
+    rel: "preconnect",
+    href: "https://fonts.gstatic.com",
+    crossOrigin: "true"
+  }), /* @__PURE__ */ React.createElement("link", {
     rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i",
+    href: "https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap",
     type: "text/css"
   }), /* @__PURE__ */ React.createElement("link", {
     rel: "stylesheet",
@@ -1008,7 +1024,7 @@ function useEnvDetection(navigator2) {
 }
 
 // app/styles/routes/index.css
-var routes_default = "/build/_assets/index-6I4UXQEJ.css";
+var routes_default = "/build/_assets/index-RANVCMIO.css";
 
 // route-module:/Users/macbookpro/Desktop/Projects/DogLog Repos/doglog-remix-0.17/app/routes/index.tsx
 var import_react14 = __toModule(require("react"));

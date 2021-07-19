@@ -85,6 +85,7 @@ function Carousel ({ items, dynamicHeight }: CarouselProps) {
           className={`carousel-dot-arrow carousel-dot-arrow--left left-arrow ${ isMobile ? 'carousel-dot-arrow--is-mobile' : '' }` }
           onClick={ () => handleArrowClick('left') }
           aria-label="Previous slide"
+          tabIndex={ -1 }
           suppressHydrationWarning
         >
           <i className="fas fa-chevron-left left-arrow"></i>
@@ -109,6 +110,7 @@ function Carousel ({ items, dynamicHeight }: CarouselProps) {
           className={ `carousel-dot-arrow carousel-dot-arrow--right right-arrow ${ isMobile ? 'carousel-dot-arrow--is-mobile' : '' }` }
           onClick={ () => handleArrowClick('right') }
           aria-label="Next slide"
+          tabIndex={ -1 }
           suppressHydrationWarning
         >
           <i className="fas fa-chevron-right right-arrow"></i>

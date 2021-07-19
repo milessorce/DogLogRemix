@@ -291,7 +291,7 @@ $navbar-height: 4.5rem;
       padding: 0 6rem;
     }
     @media all and (min-width: 1280px) {
-      padding: 0 9rem;
+      padding: 0 16rem;
     }
   }
   &--visible {

@@ -47,9 +47,6 @@ $doglog-box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
     .header-subcontainer {
       padding-top: 5rem;
-      .header-subtext {
-        display: none;
-      }
     }
   }
   @media all and (max-width: 320px) and (hover:none) {
@@ -128,7 +125,7 @@ $doglog-box-shadow: 0 5px 15px rgba(0,0,0,0.2);
       background: rgba(0, 0, 0, 0.25);
     }
     .header-headline {
-      margin: 0;
+      margin: 0 0 1.875rem;
       font-weight: 400;
       font-size: 2rem;
       line-height: 2.625rem;
@@ -145,16 +142,6 @@ $doglog-box-shadow: 0 5px 15px rgba(0,0,0,0.2);
       }
       @media all and (min-width: 1024px) and (hover:none) {
         font-size: 2.75rem;
-      }
-    }
-    .header-subcontainer .header-subtext {
-      color: #ffffff;
-      margin-top: 1.875rem;
-      font-size: 1.125rem;
-      line-height: 1.875rem;
-      @media all and (min-width: 1024px) and (hover:none) {
-        font-size: 1.5rem;
-        font-weight: 300;
       }
     }
     .header-app-store-container {

@@ -7,7 +7,7 @@ export default function Hero() {
   const containerRef = useRef<HTMLDivElement>(null!);
   const featuresSectionObserver = isBrowser ? useRef(new IntersectionObserver(([ entry ], observer: IntersectionObserver) => {
     setIsScrollButtonVisible(!entry.isIntersecting);
-  }, { threshold: 0.1 })) : useRef(null);
+  }, { threshold: 0.2 })) : useRef(null);
 
   useEffect(() => {
     const featuresSection = document.getElementById('features');
@@ -30,12 +30,8 @@ export default function Hero() {
       <div className="linear-gradient-background">
         <div className="header-container" ref={ containerRef }>
           <img className="header-image" src="https://s3-us-west-1.amazonaws.com/doglog-media/DogLogIconLarge_White.png" />
-          <h1 className="header-headline">Track your pet’s health and coordinate pet-related tasks</h1>
+          <h1 className="header-headline">Track and coordinate your pet's activities and health</h1>
           <div className="header-subcontainer">
-            <p className="header-subtext"> With DogLog, you always know how your dog's day is going.
-              Track and analyze your dog's activities, eating habits, vet appointments, and much more.
-              This information and guidance helps your dog have the happy and healthy life it deserves!
-            </p>
             <div className="header-app-store-container">
               <a className="app-icon app-icon--app-store" href="https://itunes.apple.com/us/app/doglog-track-your-pets-life/id1229529595?mt=8">
                 <img src="https://s3-us-west-1.amazonaws.com/doglog-media/badgeappstore.png" />
