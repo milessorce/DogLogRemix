@@ -146,7 +146,7 @@
         border-radius: 50%;
         background-color: rgba(0,0,0,0.15);
         font-weight: normal;
-        color: #777777;
+        color: #595959;
         transition: all ease 0.25s;
         margin: 0 0.25rem;
       }
@@ -219,7 +219,7 @@
       font-weight: 700;
       letter-spacing: 0.5px;
       text-transform: uppercase;
-      color: #777;
+      color: #595959;
       position: relative;
 }
 
@@ -397,7 +397,7 @@
     font-weight: 700;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    color: #777;
+    color: #595959;
   }
 
 .footer__links a:hover,
@@ -430,7 +430,7 @@ body {
 }
 
 p {
-  color: #777777;
+  color: #595959;
   line-height: 1.75rem;
   margin-bottom: 1.875rem;
 }

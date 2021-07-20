@@ -503,7 +503,7 @@ function Hero() {
     onClick: () => window.scrollTo({top: window.innerHeight, left: 0, behavior: "smooth"}),
     "aria-label": "Scroll down to Features"
   }, /* @__PURE__ */ React.createElement("img", {
-    src: "https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto,q_auto/DogLog/down-icon.png",
+    src: "https://res.cloudinary.com/dyrrwpemp/image/upload/fl_lossy,q_auto/DogLog/down-icon.png",
     alt: ""
   }))));
 }
@@ -729,7 +729,7 @@ function ScrollToTop() {
 }
 
 // app/styles/global.css
-var global_default = "/build/_assets/global-V2JGPWKH.css";
+var global_default = "/build/_assets/global-LB6PDHT4.css";
 
 // route-module:/Users/macbookpro/Desktop/Projects/DogLog Repos/doglog-remix-0.17/app/root.tsx
 var links3 = () => {
@@ -748,9 +748,6 @@ function Document({children}) {
   }), /* @__PURE__ */ React.createElement("meta", {
     name: "viewport",
     content: "width=device-width,initial-scale=1,viewport-fit=cover"
-  }), /* @__PURE__ */ React.createElement("link", {
-    rel: "canonical",
-    href: "https://www.doglogapp.com/"
   }), /* @__PURE__ */ React.createElement("meta", {
     name: "keywords",
     content: "dog, dogs, pet, pets, app, application, petcare, mobile, track, tracking, tracker, activities, blog, doglog, log, doge, fetch, rover, walk, walking, walker, pee, poop, vet, happy, healthy, safe, pup, puppy, schedule, simple, reminder, reminders, treat, treats, medicine, meal"
@@ -863,7 +860,10 @@ var about_us_default = "/build/_assets/about-us-YSO7YOP2.css";
 
 // route-module:/Users/macbookpro/Desktop/Projects/DogLog Repos/doglog-remix-0.17/app/routes/about-us.tsx
 var links5 = () => {
-  return [{rel: "stylesheet", href: about_us_default}];
+  return [
+    {rel: "stylesheet", href: about_us_default},
+    {rel: "canonical", href: "https://www.doglogapp.com/about-us"}
+  ];
 };
 var meta2 = () => {
   return {
@@ -1017,7 +1017,10 @@ var blog_default = "/build/_assets/blog-JBEQRF3O.css";
 
 // route-module:/Users/macbookpro/Desktop/Projects/DogLog Repos/doglog-remix-0.17/app/routes/blog.tsx
 var links6 = () => {
-  return [{rel: "stylesheet", href: blog_default}];
+  return [
+    {rel: "stylesheet", href: blog_default},
+    {rel: "canonical", href: "https://www.doglogapp.com/blog"}
+  ];
 };
 function headers3() {
   return {
@@ -1131,7 +1134,8 @@ var links7 = () => {
     {rel: "stylesheet", href: routes_default},
     {rel: "stylesheet", href: "https://unpkg.com/react-responsive-carousel@3.2.19/lib/styles/carousel.min.css"},
     {rel: "preload", href: "https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto,q_50/DogLog/header-image-blurred.jpg", as: "image"},
-    {rel: "preload", href: "https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/header-image.jpg", as: "image"}
+    {rel: "preload", href: "https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/header-image.jpg", as: "image"},
+    {rel: "canonical", href: "https://www.doglogapp.com/"}
   ];
 };
 function headers4() {

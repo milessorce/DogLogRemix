@@ -1,5 +1,5 @@
 {
-  "version": "825d7575",
+  "version": "4fa9a29d",
   "entry": {
     "module": "/build/entry.client-2B7WAZ4P.js",
     "imports": [
@@ -13,9 +13,9 @@
     "root": {
       "id": "root",
       "path": "/",
-      "module": "/build/root-IPXZXUPS.js",
+      "module": "/build/root-MDY7VPHK.js",
       "imports": [
-        "/build/_shared/chunk-ZAO4JBRY.js"
+        "/build/_shared/chunk-EZ4BRIVW.js"
       ],
       "hasAction": false,
       "hasLoader": false
@@ -34,7 +34,7 @@
       "parentId": "root",
       "path": "about-us",
       "caseSensitive": false,
-      "module": "/build/routes/about-us-XQLXJLEK.js",
+      "module": "/build/routes/about-us-656JAXFS.js",
       "hasAction": false,
       "hasLoader": false
     },
@@ -43,7 +43,7 @@
       "parentId": "root",
       "path": "blog",
       "caseSensitive": false,
-      "module": "/build/routes/blog-2NXDPJKL.js",
+      "module": "/build/routes/blog-3FYIY56P.js",
       "hasAction": false,
       "hasLoader": true
     },
@@ -52,10 +52,10 @@
       "parentId": "root",
       "path": "/",
       "caseSensitive": false,
-      "module": "/build/routes/index-6VT5OYHY.js",
+      "module": "/build/routes/index-GASVWM32.js",
       "hasAction": false,
       "hasLoader": false
     }
   },
-  "url": "/build/manifest-825D7575.js"
+  "url": "/build/manifest-4FA9A29D.js"
 }

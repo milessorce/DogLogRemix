@@ -55,7 +55,7 @@ export default function Hero() {
             onClick={ () => window.scrollTo({ top: window.innerHeight, left: 0, behavior: 'smooth' }) }
             aria-label="Scroll down to Features"
           >
-            <img src="https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto,q_auto/DogLog/down-icon.png" alt="" />
+            <img src="https://res.cloudinary.com/dyrrwpemp/image/upload/fl_lossy,q_auto/DogLog/down-icon.png" alt="" />
           </button>
       </div>
     </section>

@@ -7,6 +7,7 @@
 
 /* VARIABLES */
 $doglog-red: #a5352f;
+$doglog-grey: #595959;
 $paragraph-text-on-dark: #616161;
 $navbar-height: 4.5rem;
 
@@ -130,7 +131,7 @@ $navbar-height: 4.5rem;
         border-radius: 50%;
         background-color: rgba(0,0,0,0.15);
         font-weight: normal;
-        color: #777777;
+        color: $doglog-grey;
         transition: all ease 0.25s;
         margin: 0 0.25rem;
         &:hover,
@@ -194,7 +195,7 @@ $navbar-height: 4.5rem;
       font-weight: 700;
       letter-spacing: 0.5px;
       text-transform: uppercase;
-      color: #777;
+      color: $doglog-grey;
       position: relative;
       &.active {
         &::after {
@@ -346,7 +347,7 @@ $navbar-height: 4.5rem;
     font-weight: 700;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    color: #777;
+    color: $doglog-grey;
     &:hover,
     &:focus {
       color: $doglog-red;
@@ -380,7 +381,7 @@ body {
 }
 
 p {
-  color: #777777;
+  color: $doglog-grey;
   line-height: 1.75rem;
   margin-bottom: 1.875rem;
 }
