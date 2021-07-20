@@ -22,42 +22,56 @@ const members = [
   {
     name: 'Lynn',
     title: 'Co-Founder & President',
-    photoUrl: 'https://s3-us-west-1.amazonaws.com/doglog-media/lynn.jpg',
+    smallPhotoSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/w_240/DogLog/lynn.jpg',
+    mediumPhotoSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/w_256/DogLog/lynn.jpg',
+    largePhotoSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/w_288/DogLog/lynn.jpg',
     linkedInUrl: 'https://www.linkedin.com/in/lynnmarks1/'
   },
   {
     name: 'Gideon',
     title: 'Co-Founder & Advisor',
-    photoUrl: 'https://s3-us-west-1.amazonaws.com/doglog-media/gideon.jpg',
+    smallPhotoSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/w_240/DogLog/gideon.jpg',
+    mediumPhotoSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/w_256/DogLog/gideon.jpg',
+    largePhotoSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/w_288/DogLog/gideon.jpg',
     linkedInUrl: 'https://www.linkedin.com/in/gideonmarks/'
   },
   {
     name: 'Ron',
     title: 'Co-Founder',
-    photoUrl: 'https://s3-us-west-1.amazonaws.com/doglog-media/ron.jpg',
+    smallPhotoSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/w_240/DogLog/ron.jpg',
+    mediumPhotoSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/w_256/DogLog/ron.jpg',
+    largePhotoSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/w_288/DogLog/ron.jpg',
     linkedInUrl: 'https://www.linkedin.com/in/ron-marks-50023b76/'
   },
   {
     name: 'Miles',
     title: 'Developer & Advisor',
-    photoUrl: 'https://s3-us-west-1.amazonaws.com/doglog-media/miles.jpg',
+    smallPhotoSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/w_240/DogLog/miles.jpg',
+    mediumPhotoSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/w_256/DogLog/miles.jpg',
+    largePhotoSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/w_288/DogLog/miles.jpg',
     linkedInUrl: 'https://www.linkedin.com/in/milessorce/'
   },
   {
     name: 'Emily',
     title: 'UI/UX Designer',
-    photoUrl: 'https://s3-us-west-1.amazonaws.com/doglog-media/emily.jpg',
+    smallPhotoSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/w_240/DogLog/emily.jpg',
+    mediumPhotoSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/w_256/DogLog/emily.jpg',
+    largePhotoSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/w_288/DogLog/emily.jpg',
     linkedInUrl: 'https://www.linkedin.com/in/emily-garverick'
   },
   {
     name: 'Joy',
     title: 'Chief Cuddles Officer',
-    photoUrl: 'https://s3-us-west-1.amazonaws.com/doglog-media/joy.jpg',
+    smallPhotoSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/w_240/DogLog/joy.jpg',
+    mediumPhotoSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/w_256/DogLog/joy.jpg',
+    largePhotoSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/w_288/DogLog/joy.jpg',
   },
   {
     name: 'Cali',
     title: 'Chief Fluff Officer',
-    photoUrl: 'https://s3-us-west-1.amazonaws.com/doglog-media/cali.jpg',
+    smallPhotoSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/w_240/DogLog/cali.jpg',
+    mediumPhotoSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/w_256/DogLog/cali.jpg',
+    largePhotoSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/w_288/DogLog/cali.jpg',
   }
 ];
 
@@ -74,7 +88,7 @@ export default function AboutUs () {
           <div className="section-container section-container--our-story">
             <h2 className="section-header fadeIn">Our Story</h2>
             <div className="our-story-image-container">
-              <img src="https://s3-us-west-1.amazonaws.com/doglog-media/lynn-cali.jpg" loading="lazy" alt="Founder Lynn Marks and her dog Cali" />
+              <img src="https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/lynn-cali.jpg" loading="lazy" alt="Founder Lynn Marks and her dog Cali" />
             </div>
             <div className="our-story-container">
               <p>
@@ -105,19 +119,25 @@ export default function AboutUs () {
 interface TileProps {
   name: string,
   title: string,
-  photoUrl: string,
+  smallPhotoSrc: string,
+  mediumPhotoSrc: string,
+  largePhotoSrc: string,
   linkedInUrl?: string
 }
 
-function Tile({ name, title, photoUrl, linkedInUrl}: TileProps) {
+function Tile({ name, title, smallPhotoSrc, mediumPhotoSrc, largePhotoSrc, linkedInUrl }: TileProps) {
   const content = [
-    <img src={ photoUrl } loading="lazy" key={ photoUrl } alt="" />,
+    <picture key={ smallPhotoSrc }>
+      <source srcSet={ largePhotoSrc } media="(max-width: 631px)" />
+      <source srcSet={ mediumPhotoSrc } media="(max-width: 992px)" />
+      <img src={ smallPhotoSrc } alt="" />
+    </picture>,
     <p className="name" key={ name }>{ name }</p>,
     <p className="title" key={ title }>{ title }</p>
   ];
 
   return linkedInUrl
-    ? <a className="headshot-container" href={ linkedInUrl } target="_blank">{ content }</a>
+    ? <a className="headshot-container" href={ linkedInUrl } target="_blank" rel="noopener">{ content }</a>
     : <div className="headshot-container">{ content }</div>;
 }
 

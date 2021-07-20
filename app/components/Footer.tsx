@@ -24,14 +24,14 @@ export default function Footer() {
           href="https://itunes.apple.com/us/app/doglog-track-your-pets-life/id1229529595?mt=8"
           aria-label="Download DogLog on the Apple App Store"
         >
-          <img src="https://s3-us-west-1.amazonaws.com/doglog-media/badgeappstore.png" aria-hidden="true" loading="lazy" />
+          <img src="https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto,w_208/DogLog/badgeappstore.png" aria-hidden="true" loading="lazy" width="208" />
         </a>
         <a
           className="app-icon app-icon--android-store"
           href="https://play.google.com/store/apps/details?id=com.mobikode.dog"
           aria-label="Download DogLog on the Google Play Store"
         >
-          <img src="https://s3-us-west-1.amazonaws.com/doglog-media/badgegoogleplay.png" aria-hidden="true" loading="lazy" />
+          <img src="https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto,w_208/DogLog/badgegoogleplay.png" aria-hidden="true" loading="lazy" width="208" />
         </a>
       </div>
       <div className="social-media-links">

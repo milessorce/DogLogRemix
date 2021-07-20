@@ -34,7 +34,7 @@
 
 .hero-header {
   will-change: background-image;
-  background-image: url(https://doglog-media.s3-us-west-1.amazonaws.com/header-image-blurred.jpg), url(https://s3-us-west-1.amazonaws.com/doglog-media/header-image.jpg);
+  background-image: url(https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto,q_50/DogLog/header-image-blurred.jpg), url(https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/header-image.jpg);
   background-position: 0% 0%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,9 +43,9 @@
   height: 100vh;
   width: 100vw;
   will-change: background-position, background-image;
-  transition: background-position ease .75s, background-image ease 1.25s;
-  -webkit-animation: fadeIn 1.5s forwards;
-          animation: fadeIn 1.5s forwards;
+  transition: background-position ease 0.75s, background-image ease 1s;
+  -webkit-animation: fadeIn 0.5s forwards;
+          animation: fadeIn 0.5s forwards;
   padding-top: 6rem;
   position: relative;
 }
@@ -120,8 +120,8 @@
     width: 50%;
     text-align: left;
     position: sticky;
-    -webkit-animation: fadeIn 3s forwards;
-            animation: fadeIn 3s forwards;
+    -webkit-animation: fadeIn 2s forwards;
+            animation: fadeIn 2s forwards;
     top: 20%;
   }
 
@@ -276,6 +276,15 @@
 .section {
   overflow: hidden;
 }
+
+.section .features-heading {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin: 0.625rem 0;
+  }
 
 .section--features {
     padding-bottom: 6rem;
@@ -494,7 +503,7 @@
               margin: 0;
             }
 
-.section--features-2 .more-features-container .more-features-column .features-icon-list-item h5 {
+.section--features-2 .more-features-container .more-features-column .features-icon-list-item h3 {
               margin: 0 0 0.1875rem;
             }
 

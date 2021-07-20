@@ -18,44 +18,44 @@ export default function MoreFeatures() {
             <div className="features-icon-list">
                 <div className="features-icon-list-item fadeIn fadeIn--left">
                   <i className="icon material-icons" aria-hidden="true">photo_camera</i>
-                  <h5>Save photos to your feed</h5>
+                  <h3 className="features-heading">Save photos to your feed</h3>
                   <p>Photograph events and log your pet's life with photos.</p>
                 </div>
                 <div className="features-icon-list-item fadeIn fadeIn--right">
                   <i className="icon material-icons" aria-hidden="true">thumb_up</i>
-                  <h5>Like & Comment</h5>
+                  <h3 className="features-heading">Like & Comment</h3>
                   <p>Keep in touch about all of your dog's activities in the Feed.</p>
                 </div>
                 <div className="features-icon-list-item features-icon-list-item--connect fadeIn fadeIn--left">
                   <i className="icon material-icons" aria-hidden="true">people</i>
-                  <h5>Connect all pet caretakers</h5>
+                  <h3 className="features-heading">Connect all pet caretakers</h3>
                   <p>Invite family members, friends, vets, walkers, and sitters.</p>
                 </div>
                 <div className="features-icon-list-item fadeIn fadeIn--right">
                   <i className="icon icon--health material-icons" aria-hidden="true">timeline</i>
-                  <h5>Long-term health tracking</h5>
+                  <h3 className="features-heading">Long-term health tracking</h3>
                   <p>Aggregate all health and behavioral records in one place.</p>
                 </div>
                 <div className="features-icon-list-item features-icon-list-item--notifications fadeIn fadeIn--left">
                   <i className="icon material-icons" aria-hidden="true">notifications</i>
-                  <h5>Event Notification</h5>
+                  <h3 className="features-heading">Event Notification</h3>
                   <p>Stay up to date on your pet's day.</p>
                 </div>
                 <div className="features-icon-list-item features-icon-list-item--tracking fadeIn fadeIn--right">
                   <img
-                    src="https://s3-us-west-1.amazonaws.com/doglog-media/DogLogIconInverted.png"
+                    src="https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/DogLogIconInverted.png"
                     className="icon icon--tracking"
                     loading="lazy"
                     aria-hidden="true"
                   />
-                  <h5>Multi-pet tracking</h5>
+                  <h3 className="features-heading">Multi-pet tracking</h3>
                   <p>Track each of your pets' information together in one Pack.</p>
                 </div>
             </div>
           </div>
           <div className="more-features-screenshot-container fadeIn fadeIn--screenshot">
             <img
-              src="https://s3-us-west-1.amazonaws.com/doglog-media/features-screenshot-2.png"
+              src="https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/features-screenshot-2.png"
               loading="lazy"
               alt="Features screenshot"
             />

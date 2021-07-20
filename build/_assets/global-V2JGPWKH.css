@@ -165,6 +165,10 @@
       }
 .section--footer .download-buttons {
       margin: 0 0.625rem 2.5rem;
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 .section--footer .copyright {
       border-top: 0.0625rem solid #eeeeee;
@@ -177,6 +181,7 @@
   height: 4.5rem;
   width: 100%;
   position: fixed;
+  top: 0;
   margin-top: -10rem;
   background: #ffffff;
   z-index: 99999;
@@ -333,7 +338,7 @@
 @media all and (min-width: 1280px) {
 
 .navbar-content-container {
-      padding: 0 9rem
+      padding: 0 16rem
   }
     }
 
@@ -405,22 +410,6 @@
   text-decoration: none;
 }
 
-.app-icon img {
-    width: 13rem;
-  }
-
-.app-icon--app-store {
-    margin-right: 0.125rem;
-  }
-
-.app-icon--android-store {
-    margin-left: 0.125rem;
-  }
-
-.error-boundary {
-  margin-top: 4.5rem;
-}
-
 /* NORMALIZE */
 :focus:not(:focus-visible) {
   outline: none;
@@ -466,15 +455,6 @@ h1 {
 
 h3 {
   color: #333;
-}
-
-h5 {
-  font-size: 13px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  line-height: 25px;
-  text-transform: uppercase;
-  margin: 0.625rem 0;
 }
 
 img {

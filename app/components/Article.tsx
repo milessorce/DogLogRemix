@@ -44,7 +44,7 @@ export const Article = forwardRef<HTMLElement, ArticleProps>(({ feed, post }: Ar
           target="_blank"
           rel="noreferrer"
         >
-          <img className="article__author-logo" src={ feed.image } loading="lazy" />
+          <img className="article__author-logo" src={ feed.image } loading="lazy" alt="" />
           <span className="article__author-link">DogLog Blog</span>
         </a>
       </div>

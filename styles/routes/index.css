@@ -23,7 +23,7 @@ $doglog-box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 
 .hero-header {
   will-change: background-image;
-  background-image: url(https://doglog-media.s3-us-west-1.amazonaws.com/header-image-blurred.jpg), url(https://s3-us-west-1.amazonaws.com/doglog-media/header-image.jpg);
+  background-image: url(https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto,q_50/DogLog/header-image-blurred.jpg), url(https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/header-image.jpg);
   background-position: 0% 0%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,8 +32,8 @@ $doglog-box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   height: 100vh;
   width: 100vw;
   will-change: background-position, background-image;
-  transition: background-position ease .75s, background-image ease 1.25s;
-  animation: fadeIn 1.5s forwards;
+  transition: background-position ease 0.75s, background-image ease 1s;
+  animation: fadeIn 0.5s forwards;
   padding-top: 6rem;
   position: relative;
   @media all and (max-width: 719px) {
@@ -86,7 +86,7 @@ $doglog-box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     width: 50%;
     text-align: left;
     position: sticky;
-    animation: fadeIn 3s forwards;
+    animation: fadeIn 2s forwards;
     top: 20%;
     @media all and (max-width: 719px) {
       top: 10%;
@@ -181,6 +181,16 @@ $doglog-box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 
 .section {
   overflow: hidden;
+
+  .features-heading {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin: 0.625rem 0;
+  }
+
   &--features {
     padding-bottom: 6rem;
     .features-list-container {
@@ -323,7 +333,7 @@ $doglog-box-shadow: 0 5px 15px rgba(0,0,0,0.2);
             p { 
               margin: 0;
             }
-            h5 {
+            h3 {
               margin: 0 0 0.1875rem;
             }
             .icon {

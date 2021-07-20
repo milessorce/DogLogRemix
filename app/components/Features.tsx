@@ -17,28 +17,28 @@ export default function Features() {
         <div className="features-list-container">
           <ul className="features-column features-column--left">
             <li className="features-column--list-item">
-              <h5>Share everything</h5>
+              <h3 className="features-heading">Share everything</h3>
               <p>Coordinate and track pet related activities with family members, dog walkers, and pet sitters.</p>
             </li>
             <li className="features-column--list-item">
-              <h5>Track what's relevant</h5>
+              <h3 className="features-heading">Track what's relevant</h3>
               <p>Create custom events to track what matters to you and your dog.</p>
             </li>
           </ul>
           <ul className="features-column features-column--right">
             <li className="features-column--list-item">
-              <h5>Never forget what's important</h5>
+              <h3 className="features-heading">Never forget what's important</h3>
               <p>Reminders help you remember your dog's chores, medicines, and appointments.</p>
             </li>
             <li className="features-column--list-item">
-              <h5>Understand trends</h5>
+              <h3 className="features-heading">Understand trends</h3>
               <p>Analyze your data to figure out trends and enforce a routine.</p>
             </li>
           </ul>
           <div className="features-column features-column--screenshot">
             <img
               className="features-screenshot"
-              src="https://s3-us-west-1.amazonaws.com/doglog-media/features-screenshot.png"
+              src="https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/features-screenshot.png"
               loading="lazy"
               alt="Features screenshot"
             />

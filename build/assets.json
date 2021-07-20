@@ -1,5 +1,5 @@
 {
-  "version": "4d99717a",
+  "version": "69c7121a",
   "entry": {
     "module": "/build/entry.client-2B7WAZ4P.js",
     "imports": [
@@ -13,9 +13,9 @@
     "root": {
       "id": "root",
       "path": "/",
-      "module": "/build/root-O34Y4GEF.js",
+      "module": "/build/root-GXN3PS5K.js",
       "imports": [
-        "/build/_shared/chunk-PHJN6BDZ.js"
+        "/build/_shared/chunk-ZAO4JBRY.js"
       ],
       "hasAction": false,
       "hasLoader": false
@@ -34,7 +34,7 @@
       "parentId": "root",
       "path": "about-us",
       "caseSensitive": false,
-      "module": "/build/routes/about-us-LN5E2GJ7.js",
+      "module": "/build/routes/about-us-XQLXJLEK.js",
       "hasAction": false,
       "hasLoader": false
     },
@@ -43,7 +43,7 @@
       "parentId": "root",
       "path": "blog",
       "caseSensitive": false,
-      "module": "/build/routes/blog-I76YAWFW.js",
+      "module": "/build/routes/blog-2NXDPJKL.js",
       "hasAction": false,
       "hasLoader": true
     },
@@ -52,10 +52,10 @@
       "parentId": "root",
       "path": "/",
       "caseSensitive": false,
-      "module": "/build/routes/index-NQON2GYC.js",
+      "module": "/build/routes/index-6VT5OYHY.js",
       "hasAction": false,
       "hasLoader": false
     }
   },
-  "url": "/build/manifest-4D99717A.js"
+  "url": "/build/manifest-69C7121A.js"
 }

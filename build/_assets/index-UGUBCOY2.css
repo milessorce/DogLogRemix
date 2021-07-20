@@ -34,7 +34,7 @@
 
 .hero-header {
   will-change: background-image;
-  background-image: url(https://doglog-media.s3-us-west-1.amazonaws.com/header-image-blurred.jpg), url(https://s3-us-west-1.amazonaws.com/doglog-media/header-image.jpg);
+  background-image: url(https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto,q_50/DogLog/header-image-blurred.jpg), url(https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/header-image.jpg);
   background-position: 0% 0%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,9 +42,10 @@
   background-color: rgba(119, 119, 119, 0.10);
   height: 100vh;
   width: 100vw;
-  transition: background-position ease .75s, background-image ease 1.25s;
-  -webkit-animation: fadeIn 1.5s forwards;
-          animation: fadeIn 1.5s forwards;
+  will-change: background-position, background-image;
+  transition: background-position ease 0.75s, background-image ease 1s;
+  -webkit-animation: fadeIn 0.5s forwards;
+          animation: fadeIn 0.5s forwards;
   padding-top: 6rem;
   position: relative;
 }
@@ -68,16 +69,14 @@
       margin-top: 2rem;
     }
     .hero-header .header-subcontainer {
-      padding-top: 5rem;
+      padding-top: 2rem;
     }
-      .hero-header .header-subcontainer .header-subtext {
-        display: none;
-      }
   }
 
 @media all and (max-width: 320px) and (hover:none) {
     .hero-header .header-subcontainer {
-      padding-top: 2rem;
+      padding-top: 0rem;
+      transform: scale(0.9);
     }
   }
 
@@ -91,16 +90,9 @@
 .hero-header .linear-gradient-background {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
     margin-top: -6rem;
   }
-
-@media all and (max-width: 480px) {
-
-.hero-header .linear-gradient-background {
-      background: rgba(0, 0, 0, .3)
-  }
-    }
 
 .hero-header .scroll-button {
     -webkit-appearance: none;
@@ -128,19 +120,23 @@
     width: 50%;
     text-align: left;
     position: sticky;
-    -webkit-animation: fadeIn 3s forwards;
-            animation: fadeIn 3s forwards;
-    top: 6rem;
+    -webkit-animation: fadeIn 2s forwards;
+            animation: fadeIn 2s forwards;
+    top: 20%;
   }
 
 @media all and (max-width: 719px) {
 
 .hero-header .header-container {
+      top: 10%;
       width: 80%;
       margin-left: 10%;
       margin-right: 10%;
       text-align: center
   }
+      .hero-header .header-container .header-app-store-container {
+        justify-content: center;
+      }
     }
 
 @media all and (min-width: 540px) and (max-width: 1280px) {
@@ -159,9 +155,6 @@
       width: 32rem;
       margin-left: 15%
   }
-      .hero-header .header-container .header-app-store-container {
-        justify-content: left;
-      }
     }
 
 @media all and (min-width: 1441px) {
@@ -190,7 +183,6 @@
 @media all and (min-width: 1024px) and (hover:none) {
 
 .hero-header .header-container {
-      top: 8rem;
       width: 33rem
   }
     }
@@ -201,7 +193,7 @@
     }
 
 .hero-header .header-container .header-headline {
-      margin: 0;
+      margin: 0 0 1.875rem;
       font-weight: 400;
       font-size: 2rem;
       line-height: 2.625rem;
@@ -237,26 +229,10 @@
     }
       }
 
-.hero-header .header-container .header-subcontainer .header-subtext {
-      color: #ffffff;
-      margin-top: 1.875rem;
-      font-size: 1.125rem;
-      line-height: 1.875rem;
-    }
-
-@media all and (min-width: 1024px) and (hover:none) {
-
-.hero-header .header-container .header-subcontainer .header-subtext {
-        font-size: 1.5rem;
-        font-weight: 300
-    }
-      }
-
 .hero-header .header-container .header-app-store-container {
       display: flex;
       gap: 0.5rem;
       flex-wrap: wrap;
-      justify-content: center;
       padding-bottom: 0.5rem;
     }
 
@@ -300,6 +276,15 @@
 .section {
   overflow: hidden;
 }
+
+.section .features-heading {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin: 0.625rem 0;
+  }
 
 .section--features {
     padding-bottom: 6rem;
@@ -518,7 +503,7 @@
               margin: 0;
             }
 
-.section--features-2 .more-features-container .more-features-column .features-icon-list-item h5 {
+.section--features-2 .more-features-container .more-features-column .features-icon-list-item h3 {
               margin: 0 0 0.1875rem;
             }
 
@@ -659,179 +644,71 @@
       opacity: 1;
     }
 
-@media all and (min-width: 769px) {
-
-.carousel-container {
-    width: 46.875rem
+.carousel-item-text {
+  display: flex;
+  flex-direction: column;
+  color: rgb(47,79,79);
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 2.25rem;
+  letter-spacing: 0.0625rem;
 }
-  }
-
-@media all and (min-width: 992px) {
-
-.carousel-container {
-    width: 62rem
-}
-  }
-
-@media all and (min-width: 1050px) {
-
-.carousel-container {
-    width: 68rem
-}
-  }
-
-@media all and (max-width: 768px) {
-
-.carousel-container {
-    padding-left: 2rem;
-    padding-right: 2rem
-}
-  }
-
-.carousel-container {
-  margin-left: -0.9375rem;
-  margin-right: -0.9375rem;
-}
-
-.carousel-container .carousel {
-    position: relative;
-  }
-
-@media all and (min-width: 768px) {
-
-.carousel-container .carousel {
-      padding-right: 4rem;
-      padding-left: 4rem
-  }
-    }
-
-.carousel-container .carousel-dot-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-.carousel-container .carousel-dot-container button {
-        -webkit-appearance: none;
-           -moz-appearance: none;
-                appearance: none;
-        background: none;
-      }
-
-.carousel-container .carousel-dot-container .carousel-dot-arrow {
-        position: absolute;
-        color: rgba(0, 0, 0, 0.15);
-        font-size: 2rem;
-      }
-
-.carousel-container .carousel-dot-container .carousel-dot-arrow:hover:not(.carousel-dot-arrow--is-mobile),
-        .carousel-container .carousel-dot-container .carousel-dot-arrow:focus,
-        .carousel-container .carousel-dot-container .carousel-dot-arrow--active {
-          color: #a5352f;
-        }
-
-.carousel-container .carousel-dot-container .carousel-dot-arrow--left {
-          left: -2.5rem
-        }
-
-.carousel-container .carousel-dot-container .carousel-dot-arrow--right {
-          right: -2.5rem
-        }
-
-.carousel-container .carousel .carousel-item-list {
-      -webkit-user-select: none;
-         -moz-user-select: none;
-          -ms-user-select: none;
-              user-select: none;
-      transition: height ease 0.5s;
-    }
-
-.carousel-container .carousel .carousel-item-container {
-      position: absolute;
-      visibility: hidden;
-      width: 96%;
-      transition: left 0.5s, visibility 0.5s;
-      cursor: default;
-    }
-
-.carousel-container .carousel .carousel-item-container:nth-child(1) {
-        left: 0;
-      }
-
-.carousel-container .carousel .carousel-item-container:nth-child(2) {
-        left: 200rem;
-        right: initial;
-      }
-
-.carousel-container .carousel .carousel-item-container:nth-child(3) {
-        left: 400rem;
-      }
-
-.carousel-container .carousel .carousel-item-container:nth-child(4) {
-        left: 600rem;
-      }
-
-.carousel-container .carousel .carousel-item-container:nth-child(5) {
-        left: 800rem;
-      }
-
-.carousel-container .carousel .carousel-item-container:nth-child(6) {
-        left: 1000rem;
-      }
-
-.carousel-container .carousel .carousel-item-container--active {
-        left: 0;
-        visibility: visible;
-      }
-
-.carousel-container .carousel .carousel-item-container .carousel-item-text {
-        color: rgb(47,79,79);
-        font-size: 1.5rem;
-        font-style: italic;
-        font-weight: 500;
-        line-height: 2.25rem;
-        margin-bottom: 2.5rem;
-        letter-spacing: 0.0625rem;
-      }
 
 @media all and (min-width: 768px ) {
 
-.carousel-container .carousel .carousel-item-container .carousel-item-text {
-          padding: 0 4rem
-      }
-        }
+.carousel-item-text {
+    padding: 0 4rem
+}
+  }
 
-.carousel-container .carousel .carousel-item-container .carousel-item-text--author {
-          color: #a5352f;
-          font-size: 1.25rem;
-          margin-bottom: 0;
-        }
-
-.carousel-container .carousel .carousel-item-container--active {
-        width: 100%;
-      }
-
-.carousel-container .carousel .carousel-dot {
-      display: inline-block;
-      width: 0.875rem;
-      height: 0.875rem;
-      border-radius: 50%;
-      background-color: rgba(0,0,0,0.15);
-      margin: 0.125rem;
-      transition: all ease 0.25s;
-      transform: scale(0.875);
-      cursor: pointer;
+.carousel-item-text--author {
+    color: #a5352f;
+    font-size: 1.25rem;
+    padding: 1rem 0;
+  }
+.carousel-dot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.carousel-dot-container button {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background: none;
+  }
+.carousel-dot-container .carousel-dot-arrow {
+    color: rgba(0, 0, 0, 0.15);
+    font-size: 2rem;
+  }
+.carousel-dot-container .carousel-dot-arrow:hover:not(.carousel-dot-arrow--is-mobile),
+    .carousel-dot-container .carousel-dot-arrow--active {
+      color: #a5352f;
     }
-
-.carousel-container .carousel .carousel-dot:hover:not(.carousel-dot--is-mobile),
-      .carousel-container .carousel .carousel-dot--active {
-        background-color: #a5352f;
-        transform: scale(1.125);
-      }
+.carousel-dot-container .carousel-dot-arrow--left {
+      margin-right: 1rem;
+    }
+.carousel-dot-container .carousel-dot-arrow--right {
+      margin-left: 1rem;
+    }
+.carousel-dot-container .carousel-dot {
+    display: inline-block;
+    width: 0.875rem;
+    height: 0.875rem;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.15);
+    margin: 0.125rem;
+    transition: all ease 0.25s;
+    transform: scale(0.875);
+    cursor: pointer;
+  }
+.carousel-dot-container .carousel-dot:hover:not(.carousel-dot--is-mobile),
+    .carousel-dot-container .carousel-dot--active {
+      background-color: #a5352f;
+      transform: scale(1.125);
+    }
 
 .form {
   display: flex;

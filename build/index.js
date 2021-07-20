@@ -117,7 +117,8 @@ var Article = (0, import_react.forwardRef)(({feed, post}, ref) => {
   }, /* @__PURE__ */ React.createElement("img", {
     className: "article__author-logo",
     src: feed.image,
-    loading: "lazy"
+    loading: "lazy",
+    alt: ""
   }), /* @__PURE__ */ React.createElement("span", {
     className: "article__author-link"
   }, "DogLog Blog"))));
@@ -270,19 +271,27 @@ function Features() {
     className: "features-column features-column--left"
   }, /* @__PURE__ */ React.createElement("li", {
     className: "features-column--list-item"
-  }, /* @__PURE__ */ React.createElement("h5", null, "Share everything"), /* @__PURE__ */ React.createElement("p", null, "Coordinate and track pet related activities with family members, dog walkers, and pet sitters.")), /* @__PURE__ */ React.createElement("li", {
+  }, /* @__PURE__ */ React.createElement("h3", {
+    className: "features-heading"
+  }, "Share everything"), /* @__PURE__ */ React.createElement("p", null, "Coordinate and track pet related activities with family members, dog walkers, and pet sitters.")), /* @__PURE__ */ React.createElement("li", {
     className: "features-column--list-item"
-  }, /* @__PURE__ */ React.createElement("h5", null, "Track what's relevant"), /* @__PURE__ */ React.createElement("p", null, "Create custom events to track what matters to you and your dog."))), /* @__PURE__ */ React.createElement("ul", {
+  }, /* @__PURE__ */ React.createElement("h3", {
+    className: "features-heading"
+  }, "Track what's relevant"), /* @__PURE__ */ React.createElement("p", null, "Create custom events to track what matters to you and your dog."))), /* @__PURE__ */ React.createElement("ul", {
     className: "features-column features-column--right"
   }, /* @__PURE__ */ React.createElement("li", {
     className: "features-column--list-item"
-  }, /* @__PURE__ */ React.createElement("h5", null, "Never forget what's important"), /* @__PURE__ */ React.createElement("p", null, "Reminders help you remember your dog's chores, medicines, and appointments.")), /* @__PURE__ */ React.createElement("li", {
+  }, /* @__PURE__ */ React.createElement("h3", {
+    className: "features-heading"
+  }, "Never forget what's important"), /* @__PURE__ */ React.createElement("p", null, "Reminders help you remember your dog's chores, medicines, and appointments.")), /* @__PURE__ */ React.createElement("li", {
     className: "features-column--list-item"
-  }, /* @__PURE__ */ React.createElement("h5", null, "Understand trends"), /* @__PURE__ */ React.createElement("p", null, "Analyze your data to figure out trends and enforce a routine."))), /* @__PURE__ */ React.createElement("div", {
+  }, /* @__PURE__ */ React.createElement("h3", {
+    className: "features-heading"
+  }, "Understand trends"), /* @__PURE__ */ React.createElement("p", null, "Analyze your data to figure out trends and enforce a routine."))), /* @__PURE__ */ React.createElement("div", {
     className: "features-column features-column--screenshot"
   }, /* @__PURE__ */ React.createElement("img", {
     className: "features-screenshot",
-    src: "https://s3-us-west-1.amazonaws.com/doglog-media/features-screenshot.png",
+    src: "https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/features-screenshot.png",
     loading: "lazy",
     alt: "Features screenshot"
   })))));
@@ -313,37 +322,49 @@ function MoreFeatures() {
   }, /* @__PURE__ */ React.createElement("i", {
     className: "icon material-icons",
     "aria-hidden": "true"
-  }, "photo_camera"), /* @__PURE__ */ React.createElement("h5", null, "Save photos to your feed"), /* @__PURE__ */ React.createElement("p", null, "Photograph events and log your pet's life with photos.")), /* @__PURE__ */ React.createElement("div", {
+  }, "photo_camera"), /* @__PURE__ */ React.createElement("h3", {
+    className: "features-heading"
+  }, "Save photos to your feed"), /* @__PURE__ */ React.createElement("p", null, "Photograph events and log your pet's life with photos.")), /* @__PURE__ */ React.createElement("div", {
     className: "features-icon-list-item fadeIn fadeIn--right"
   }, /* @__PURE__ */ React.createElement("i", {
     className: "icon material-icons",
     "aria-hidden": "true"
-  }, "thumb_up"), /* @__PURE__ */ React.createElement("h5", null, "Like & Comment"), /* @__PURE__ */ React.createElement("p", null, "Keep in touch about all of your dog's activities in the Feed.")), /* @__PURE__ */ React.createElement("div", {
+  }, "thumb_up"), /* @__PURE__ */ React.createElement("h3", {
+    className: "features-heading"
+  }, "Like & Comment"), /* @__PURE__ */ React.createElement("p", null, "Keep in touch about all of your dog's activities in the Feed.")), /* @__PURE__ */ React.createElement("div", {
     className: "features-icon-list-item features-icon-list-item--connect fadeIn fadeIn--left"
   }, /* @__PURE__ */ React.createElement("i", {
     className: "icon material-icons",
     "aria-hidden": "true"
-  }, "people"), /* @__PURE__ */ React.createElement("h5", null, "Connect all pet caretakers"), /* @__PURE__ */ React.createElement("p", null, "Invite family members, friends, vets, walkers, and sitters.")), /* @__PURE__ */ React.createElement("div", {
+  }, "people"), /* @__PURE__ */ React.createElement("h3", {
+    className: "features-heading"
+  }, "Connect all pet caretakers"), /* @__PURE__ */ React.createElement("p", null, "Invite family members, friends, vets, walkers, and sitters.")), /* @__PURE__ */ React.createElement("div", {
     className: "features-icon-list-item fadeIn fadeIn--right"
   }, /* @__PURE__ */ React.createElement("i", {
     className: "icon icon--health material-icons",
     "aria-hidden": "true"
-  }, "timeline"), /* @__PURE__ */ React.createElement("h5", null, "Long-term health tracking"), /* @__PURE__ */ React.createElement("p", null, "Aggregate all health and behavioral records in one place.")), /* @__PURE__ */ React.createElement("div", {
+  }, "timeline"), /* @__PURE__ */ React.createElement("h3", {
+    className: "features-heading"
+  }, "Long-term health tracking"), /* @__PURE__ */ React.createElement("p", null, "Aggregate all health and behavioral records in one place.")), /* @__PURE__ */ React.createElement("div", {
     className: "features-icon-list-item features-icon-list-item--notifications fadeIn fadeIn--left"
   }, /* @__PURE__ */ React.createElement("i", {
     className: "icon material-icons",
     "aria-hidden": "true"
-  }, "notifications"), /* @__PURE__ */ React.createElement("h5", null, "Event Notification"), /* @__PURE__ */ React.createElement("p", null, "Stay up to date on your pet's day.")), /* @__PURE__ */ React.createElement("div", {
+  }, "notifications"), /* @__PURE__ */ React.createElement("h3", {
+    className: "features-heading"
+  }, "Event Notification"), /* @__PURE__ */ React.createElement("p", null, "Stay up to date on your pet's day.")), /* @__PURE__ */ React.createElement("div", {
     className: "features-icon-list-item features-icon-list-item--tracking fadeIn fadeIn--right"
   }, /* @__PURE__ */ React.createElement("img", {
-    src: "https://s3-us-west-1.amazonaws.com/doglog-media/DogLogIconInverted.png",
+    src: "https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/DogLogIconInverted.png",
     className: "icon icon--tracking",
     loading: "lazy",
     "aria-hidden": "true"
-  }), /* @__PURE__ */ React.createElement("h5", null, "Multi-pet tracking"), /* @__PURE__ */ React.createElement("p", null, "Track each of your pets' information together in one Pack.")))), /* @__PURE__ */ React.createElement("div", {
+  }), /* @__PURE__ */ React.createElement("h3", {
+    className: "features-heading"
+  }, "Multi-pet tracking"), /* @__PURE__ */ React.createElement("p", null, "Track each of your pets' information together in one Pack.")))), /* @__PURE__ */ React.createElement("div", {
     className: "more-features-screenshot-container fadeIn fadeIn--screenshot"
   }, /* @__PURE__ */ React.createElement("img", {
-    src: "https://s3-us-west-1.amazonaws.com/doglog-media/features-screenshot-2.png",
+    src: "https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/features-screenshot-2.png",
     loading: "lazy",
     alt: "Features screenshot"
   })))));
@@ -375,17 +396,19 @@ function Footer() {
     href: "https://itunes.apple.com/us/app/doglog-track-your-pets-life/id1229529595?mt=8",
     "aria-label": "Download DogLog on the Apple App Store"
   }, /* @__PURE__ */ React.createElement("img", {
-    src: "https://s3-us-west-1.amazonaws.com/doglog-media/badgeappstore.png",
+    src: "https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto,w_208/DogLog/badgeappstore.png",
     "aria-hidden": "true",
-    loading: "lazy"
+    loading: "lazy",
+    width: "208"
   })), /* @__PURE__ */ React.createElement("a", {
     className: "app-icon app-icon--android-store",
     href: "https://play.google.com/store/apps/details?id=com.mobikode.dog",
     "aria-label": "Download DogLog on the Google Play Store"
   }, /* @__PURE__ */ React.createElement("img", {
-    src: "https://s3-us-west-1.amazonaws.com/doglog-media/badgegoogleplay.png",
+    src: "https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto,w_208/DogLog/badgegoogleplay.png",
     "aria-hidden": "true",
-    loading: "lazy"
+    loading: "lazy",
+    width: "208"
   }))), /* @__PURE__ */ React.createElement("div", {
     className: "social-media-links"
   }, /* @__PURE__ */ React.createElement("a", {
@@ -440,7 +463,7 @@ function Hero() {
     };
   }, []);
   (0, import_react7.useEffect)(() => {
-    rootRef.current.style.backgroundImage = `url(https://s3-us-west-1.amazonaws.com/doglog-media/header-image.jpg)`;
+    rootRef.current.style.backgroundImage = `url(https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/header-image.jpg)`;
   }, []);
   return /* @__PURE__ */ React.createElement("section", {
     id: "home",
@@ -453,7 +476,7 @@ function Hero() {
     ref: containerRef
   }, /* @__PURE__ */ React.createElement("img", {
     className: "header-image",
-    src: "https://s3-us-west-1.amazonaws.com/doglog-media/DogLogIconLarge_White.png",
+    src: "https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/DogLogIconLarge_White.png",
     alt: "DogLog"
   }), /* @__PURE__ */ React.createElement("h1", {
     className: "header-headline"
@@ -466,21 +489,21 @@ function Hero() {
     href: "https://itunes.apple.com/us/app/doglog-track-your-pets-life/id1229529595?mt=8",
     "aria-label": "Get the app on the Apple App Store"
   }, /* @__PURE__ */ React.createElement("img", {
-    src: "https://s3-us-west-1.amazonaws.com/doglog-media/badgeappstore.png",
+    src: "https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/badgeappstore.png",
     alt: ""
   })), /* @__PURE__ */ React.createElement("a", {
     className: "app-icon app-icon--android-store",
     href: "https://play.google.com/store/apps/details?id=com.mobikode.dog",
     "aria-label": "Get the app on the Google Play Store"
   }, /* @__PURE__ */ React.createElement("img", {
-    src: "https://s3-us-west-1.amazonaws.com/doglog-media/badgegoogleplay.png",
+    src: "https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/badgegoogleplay.png",
     alt: ""
   }))))), /* @__PURE__ */ React.createElement("button", {
     className: `scroll-button ${!isScrollButtonVisible && "fadeOut"}`,
     onClick: () => window.scrollTo({top: window.innerHeight, left: 0, behavior: "smooth"}),
     "aria-label": "Scroll down to Features"
   }, /* @__PURE__ */ React.createElement("img", {
-    src: "https://s3-us-west-1.amazonaws.com/doglog-media/down-icon.png",
+    src: "https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto,q_auto/DogLog/down-icon.png",
     alt: ""
   }))));
 }
@@ -584,11 +607,13 @@ function NavBar() {
   }, /* @__PURE__ */ React.createElement(import_react_router_dom2.Link, {
     className: "navbar-logo-anchor",
     to: location.pathname === "/" ? "" : "/",
-    onClick: handleLogoClick
+    onClick: handleLogoClick,
+    "aria-label": "Home"
   }, /* @__PURE__ */ React.createElement("img", {
     className: "navbar-logo",
-    src: "https://s3-us-west-1.amazonaws.com/doglog-media/DogLogIcon_Red.png",
-    loading: "lazy"
+    src: "https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/DogLogIcon_Red.png",
+    loading: "lazy",
+    "aria-hidden": "true"
   })), /* @__PURE__ */ React.createElement("button", {
     type: "button",
     className: "navbar-toggle",
@@ -610,12 +635,30 @@ function NavBar() {
 // app/components/Quotes.tsx
 var import_react9 = __toModule(require("react"));
 var quotes = [
-  {text: "Responsive developer. Definitely the best app available.", author: "Megan Calla"},
-  {text: "Very easy to use, awesome for keeping track with multiple people involved in the care of your dogs.", author: "G.U."},
-  {text: "This is a great app! Very simple and straightforward, easy to use. I have a pet sitting business and have began to implement this with my clients for easy tracking.", author: "F.G."},
-  {text: "We have a large family and this app is exactly what we needed to keep track of our new puppy's care. I love getting notified of how things are going while I'm at work.", author: "Kate H."},
-  {text: "Love, love, love the new update! This app is so useful with having a new puppy and keeping track of her schedule, especially during potty training. I love the fact that we can customize events that are relevant to us.", author: "G.F."},
-  {text: "This app has been very helpful for me and my wife to log our two dogs\u2019 feeding schedule. Very easy to use and just what we needed! Must try it!!", author: "J.B."}
+  {
+    text: `I use this daily to record our dog's activities, very useful when there's more than one caregiver! Custom events are great. Tried other apps and this was the best one.`,
+    author: "Martin P."
+  },
+  {
+    text: `I really love this app! It allows me to keep up with my pup and her sensitive stomach. I can log all of her feedings, bathroom breaks, weight, and even customize some tasks. It is a must have!`,
+    author: "Heather M."
+  },
+  {
+    text: `DogLog is essential to not feeding the dog twice when there is more than one person caring for a dog; to know when the last time he got his meds; track his weight to determine if he's being overfed; etc. And the fact that all entries are kept "in the cloud" means your app is automatically updated whenever anyone makes an entry. And you can program reminders so that infrequent tasks are not completely forgotten. I highly recommend DogLog.`,
+    author: "John B."
+  },
+  {
+    text: `Tracking my 11-week old puppy for the past 2 weeks has been extremely helpful. I can see patterns in what times he eats, when we go outside, when he's most likely to have an accident.`,
+    author: "Mel A."
+  },
+  {
+    text: `This app is essential for tracking our pup's day. My wife and I are able to keep her bathroom activities straight so we know whether she's acting out because she might have to go to the bathroom or she's just being mischievous! When she ate something that caused her to be sick, we were able to show the vet just how many bowel movements she had in the last 48 hours. We love being able to check the reports and statistics too! All around, the experience using this app has been great!`,
+    author: "Zan P."
+  },
+  {
+    text: `It\u2019s worked great to keep track of the intake and \u201Couttake\u201D of our senior dog. It\u2019s also great for keeping track of monthly tick treatments and exercise too. That way we have a central location to check if the dog has been walked in our busy household.`,
+    author: "Penny M."
+  }
 ];
 function Quotes() {
   const sectionRef = (0, import_react9.useRef)(null);
@@ -634,10 +677,10 @@ function Quotes() {
 // app/components/Screenshots.tsx
 var import_react10 = __toModule(require("react"));
 var screenshots = [
-  {imageSrc: "https://doglog-media.s3-us-west-1.amazonaws.com/screenshots/screen__photos.png"},
-  {imageSrc: "https://doglog-media.s3-us-west-1.amazonaws.com/screenshots/screen__log-events.png"},
-  {imageSrc: "https://doglog-media.s3-us-west-1.amazonaws.com/screenshots/screen__reminders.png"},
-  {imageSrc: "https://doglog-media.s3-us-west-1.amazonaws.com/screenshots/screen__chart.png"}
+  {imageSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/screen__photos.png"},
+  {imageSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/screen__log-events.png"},
+  {imageSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/screen__reminders.png"},
+  {imageSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/screen__chart.png"}
 ];
 function Screenshots() {
   const sectionRef = (0, import_react10.useRef)(null);
@@ -686,7 +729,7 @@ function ScrollToTop() {
 }
 
 // app/styles/global.css
-var global_default = "/build/_assets/global-HURNJNHQ.css";
+var global_default = "/build/_assets/global-V2JGPWKH.css";
 
 // route-module:/Users/macbookpro/Desktop/Projects/DogLog Repos/doglog-remix-0.17/app/root.tsx
 var links3 = () => {
@@ -705,9 +748,12 @@ function Document({children}) {
   }), /* @__PURE__ */ React.createElement("meta", {
     name: "viewport",
     content: "width=device-width,initial-scale=1,viewport-fit=cover"
+  }), /* @__PURE__ */ React.createElement("link", {
+    rel: "canonical",
+    href: "https://www.doglogapp.com/"
   }), /* @__PURE__ */ React.createElement("meta", {
     name: "keywords",
-    content: "dog, dogs, pet, pets, app, application, petcare, mobile, track, tracking, activities, blog, doglog, log, doge, fetch, rover, walk, walking"
+    content: "dog, dogs, pet, pets, app, application, petcare, mobile, track, tracking, tracker, activities, blog, doglog, log, doge, fetch, rover, walk, walking, walker, pee, poop, vet, happy, healthy, safe, pup, puppy, schedule, simple, reminder, reminders, treat, treats, medicine, meal"
   }), /* @__PURE__ */ React.createElement("meta", {
     property: "og:type",
     content: "website"
@@ -720,7 +766,7 @@ function Document({children}) {
   }), /* @__PURE__ */ React.createElement("link", {
     rel: "icon",
     type: "image/x-icon",
-    href: "https://s3-us-west-1.amazonaws.com/doglog-media/favicon.png"
+    href: "https://res.cloudinary.com/dyrrwpemp/image/upload/v1626810769/DogLog/favicon.png"
   }), /* @__PURE__ */ React.createElement("link", {
     rel: "preconnect",
     href: "https://fonts.googleapis.com"
@@ -740,17 +786,6 @@ function Document({children}) {
     href: "https://use.fontawesome.com/releases/v5.8.1/css/all.css",
     integrity: "sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf",
     crossOrigin: "anonymous"
-  }), /* @__PURE__ */ React.createElement("script", {
-    async: true,
-    src: "https://www.googletagmanager.com/gtag/js?id=G-863XK73Y70"
-  }), /* @__PURE__ */ React.createElement("script", {
-    dangerouslySetInnerHTML: {
-      __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-863XK73Y70');`
-    }
   }), /* @__PURE__ */ React.createElement(import_remix2.Meta, null), /* @__PURE__ */ React.createElement(import_remix2.Links, null)), /* @__PURE__ */ React.createElement("body", null, children, /* @__PURE__ */ React.createElement(import_remix2.Scripts, null), process.env.NODE_ENV === "development" && /* @__PURE__ */ React.createElement(import_remix2.LiveReload, null)));
 }
 function App() {
@@ -813,7 +848,7 @@ __export(about_us_exports, {
 });
 
 // app/styles/routes/about-us.css
-var about_us_default = "/build/_assets/about-us-QRWUNTMV.css";
+var about_us_default = "/build/_assets/about-us-YSO7YOP2.css";
 
 // route-module:/Users/macbookpro/Desktop/Projects/DogLog Repos/doglog-remix-0.17/app/routes/about-us.tsx
 var links5 = () => {
@@ -834,42 +869,56 @@ var members = [
   {
     name: "Lynn",
     title: "Co-Founder & President",
-    photoUrl: "https://s3-us-west-1.amazonaws.com/doglog-media/lynn.jpg",
+    smallPhotoSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/w_240/DogLog/lynn.jpg",
+    mediumPhotoSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/w_256/DogLog/lynn.jpg",
+    largePhotoSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/w_288/DogLog/lynn.jpg",
     linkedInUrl: "https://www.linkedin.com/in/lynnmarks1/"
   },
   {
     name: "Gideon",
     title: "Co-Founder & Advisor",
-    photoUrl: "https://s3-us-west-1.amazonaws.com/doglog-media/gideon.jpg",
+    smallPhotoSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/w_240/DogLog/gideon.jpg",
+    mediumPhotoSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/w_256/DogLog/gideon.jpg",
+    largePhotoSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/w_288/DogLog/gideon.jpg",
     linkedInUrl: "https://www.linkedin.com/in/gideonmarks/"
   },
   {
     name: "Ron",
     title: "Co-Founder",
-    photoUrl: "https://s3-us-west-1.amazonaws.com/doglog-media/ron.jpg",
+    smallPhotoSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/w_240/DogLog/ron.jpg",
+    mediumPhotoSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/w_256/DogLog/ron.jpg",
+    largePhotoSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/w_288/DogLog/ron.jpg",
     linkedInUrl: "https://www.linkedin.com/in/ron-marks-50023b76/"
   },
   {
     name: "Miles",
     title: "Developer & Advisor",
-    photoUrl: "https://s3-us-west-1.amazonaws.com/doglog-media/miles.jpg",
+    smallPhotoSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/w_240/DogLog/miles.jpg",
+    mediumPhotoSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/w_256/DogLog/miles.jpg",
+    largePhotoSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/w_288/DogLog/miles.jpg",
     linkedInUrl: "https://www.linkedin.com/in/milessorce/"
   },
   {
     name: "Emily",
     title: "UI/UX Designer",
-    photoUrl: "https://s3-us-west-1.amazonaws.com/doglog-media/emily.jpg",
+    smallPhotoSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/w_240/DogLog/emily.jpg",
+    mediumPhotoSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/w_256/DogLog/emily.jpg",
+    largePhotoSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/w_288/DogLog/emily.jpg",
     linkedInUrl: "https://www.linkedin.com/in/emily-garverick"
   },
   {
     name: "Joy",
     title: "Chief Cuddles Officer",
-    photoUrl: "https://s3-us-west-1.amazonaws.com/doglog-media/joy.jpg"
+    smallPhotoSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/w_240/DogLog/joy.jpg",
+    mediumPhotoSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/w_256/DogLog/joy.jpg",
+    largePhotoSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/w_288/DogLog/joy.jpg"
   },
   {
     name: "Cali",
     title: "Chief Fluff Officer",
-    photoUrl: "https://s3-us-west-1.amazonaws.com/doglog-media/cali.jpg"
+    smallPhotoSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/w_240/DogLog/cali.jpg",
+    mediumPhotoSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/w_256/DogLog/cali.jpg",
+    largePhotoSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/w_288/DogLog/cali.jpg"
   }
 ];
 function AboutUs() {
@@ -894,7 +943,7 @@ function AboutUs() {
   }, "Our Story"), /* @__PURE__ */ React.createElement("div", {
     className: "our-story-image-container"
   }, /* @__PURE__ */ React.createElement("img", {
-    src: "https://s3-us-west-1.amazonaws.com/doglog-media/lynn-cali.jpg",
+    src: "https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/lynn-cali.jpg",
     loading: "lazy",
     alt: "Founder Lynn Marks and her dog Cali"
   })), /* @__PURE__ */ React.createElement("div", {
@@ -907,14 +956,20 @@ function AboutUs() {
     "aria-label": "Contribute to DogLog's GoFundMe"
   }, "Contribute")))));
 }
-function Tile({name, title, photoUrl, linkedInUrl}) {
+function Tile({name, title, smallPhotoSrc, mediumPhotoSrc, largePhotoSrc, linkedInUrl}) {
   const content = [
-    /* @__PURE__ */ React.createElement("img", {
-      src: photoUrl,
-      loading: "lazy",
-      key: photoUrl,
+    /* @__PURE__ */ React.createElement("picture", {
+      key: smallPhotoSrc
+    }, /* @__PURE__ */ React.createElement("source", {
+      srcSet: largePhotoSrc,
+      media: "(max-width: 631px)"
+    }), /* @__PURE__ */ React.createElement("source", {
+      srcSet: mediumPhotoSrc,
+      media: "(max-width: 992px)"
+    }), /* @__PURE__ */ React.createElement("img", {
+      src: smallPhotoSrc,
       alt: ""
-    }),
+    })),
     /* @__PURE__ */ React.createElement("p", {
       className: "name",
       key: name
@@ -927,7 +982,8 @@ function Tile({name, title, photoUrl, linkedInUrl}) {
   return linkedInUrl ? /* @__PURE__ */ React.createElement("a", {
     className: "headshot-container",
     href: linkedInUrl,
-    target: "_blank"
+    target: "_blank",
+    rel: "noopener"
   }, content) : /* @__PURE__ */ React.createElement("div", {
     className: "headshot-container"
   }, content);
@@ -1054,16 +1110,17 @@ function useEnvDetection(navigator2) {
 }
 
 // app/styles/routes/index.css
-var routes_default = "/build/_assets/index-KJ4HF2W6.css";
+var routes_default = "/build/_assets/index-UGUBCOY2.css";
 
 // route-module:/Users/macbookpro/Desktop/Projects/DogLog Repos/doglog-remix-0.17/app/routes/index.tsx
 var import_react14 = __toModule(require("react"));
 var links7 = () => {
   return [
+    {rel: "preconnect", href: "https://res.cloudinary.com/"},
     {rel: "stylesheet", href: routes_default},
     {rel: "stylesheet", href: "https://unpkg.com/react-responsive-carousel@3.2.19/lib/styles/carousel.min.css"},
-    {rel: "preload", href: "https://doglog-media.s3-us-west-1.amazonaws.com/header-image-blurred.jpg", as: "image"},
-    {rel: "preload", href: "https://s3-us-west-1.amazonaws.com/doglog-media/header-image.jpg", as: "image"}
+    {rel: "preload", href: "https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto,q_50/DogLog/header-image-blurred.jpg", as: "image"},
+    {rel: "preload", href: "https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/header-image.jpg", as: "image"}
   ];
 };
 function headers4() {

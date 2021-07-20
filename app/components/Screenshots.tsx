@@ -3,10 +3,10 @@ import Carousel from './Carousel';
 import useOnScreen from '../hooks/useOnScreen';
 
 const screenshots = [
-  { imageSrc: 'https://doglog-media.s3-us-west-1.amazonaws.com/screenshots/screen__photos.png' },
-  { imageSrc: 'https://doglog-media.s3-us-west-1.amazonaws.com/screenshots/screen__log-events.png' },
-  { imageSrc: 'https://doglog-media.s3-us-west-1.amazonaws.com/screenshots/screen__reminders.png' },
-  { imageSrc: 'https://doglog-media.s3-us-west-1.amazonaws.com/screenshots/screen__chart.png' }
+  { imageSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/screen__photos.png' },
+  { imageSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/screen__log-events.png' },
+  { imageSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/screen__reminders.png' },
+  { imageSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/screen__chart.png' }
 ];
 
 export default function Screenshots() {

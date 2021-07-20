@@ -43,7 +43,7 @@ export default function Modal({ closeModal }: ModalProps) {
               <h2 className="modal__heading">Thanks for subscribing to the DogLog newsletter. Stay tuned!</h2>
               <img
                 className="modal__photo"
-                src="https://doglog-media.s3-us-west-1.amazonaws.com/cali_happy.jpg"
+                src="https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/cali_happy.jpg"
                 aria-hidden="true"
               />
               <p className="modal__paragraph">

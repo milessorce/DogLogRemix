@@ -47,7 +47,6 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
             color: white;
             font-size: 1.5rem;
-            will-change: background-color;
             transition: background-color ease-in 0.15s;
           }
   .section--our-family .section-container--our-story .our-story-container .go-fund-me-button:focus {
@@ -86,17 +85,6 @@
             margin: 0 0 1rem;
           }
   .section--our-family .section-container .headshots-container .headshot-container img {
-          width: 15rem;
           border-radius: 0.25rem 0.25rem 0 0;
           border: 0.5rem solid rgb(255, 255, 255);
         }
-  @media all and (max-width: 992px) {
-  .section--our-family .section-container .headshots-container .headshot-container img {
-            width: 16rem
-        }
-          }
-  @media all and (max-width: 631px) {
-  .section--our-family .section-container .headshots-container .headshot-container img {
-            width: 18rem
-        }
-          }

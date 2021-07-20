@@ -3,12 +3,30 @@ import useOnScreen from '../hooks/useOnScreen';
 import Carousel from './Carousel';
 
 const quotes = [
-  {text: 'Responsive developer. Definitely the best app available.', author: 'Megan Calla'},
-  {text: 'Very easy to use, awesome for keeping track with multiple people involved in the care of your dogs.', author: 'G.U.'},
-  {text: 'This is a great app! Very simple and straightforward, easy to use. I have a pet sitting business and have began to implement this with my clients for easy tracking.', author: 'F.G.'},
-  {text: 'We have a large family and this app is exactly what we needed to keep track of our new puppy\'s care. I love getting notified of how things are going while I\'m at work.', author: 'Kate H.'},
-  {text: 'Love, love, love the new update! This app is so useful with having a new puppy and keeping track of her schedule, especially during potty training. I love the fact that we can customize events that are relevant to us.', author: 'G.F.'},
-  {text: 'This app has been very helpful for me and my wife to log our two dogs’ feeding schedule. Very easy to use and just what we needed! Must try it!!', author: 'J.B.'}
+  {
+    text: `I use this daily to record our dog's activities, very useful when there's more than one caregiver! Custom events are great. Tried other apps and this was the best one.`,
+    author: 'Martin P.'
+  },
+  {
+    text: `I really love this app! It allows me to keep up with my pup and her sensitive stomach. I can log all of her feedings, bathroom breaks, weight, and even customize some tasks. It is a must have!`,
+    author: 'Heather M.'
+  },
+  {
+    text: `DogLog is essential to not feeding the dog twice when there is more than one person caring for a dog; to know when the last time he got his meds; track his weight to determine if he's being overfed; etc. And the fact that all entries are kept "in the cloud" means your app is automatically updated whenever anyone makes an entry. And you can program reminders so that infrequent tasks are not completely forgotten. I highly recommend DogLog.`,
+    author: 'John B.'
+  },
+  {
+    text: `Tracking my 11-week old puppy for the past 2 weeks has been extremely helpful. I can see patterns in what times he eats, when we go outside, when he's most likely to have an accident.`,
+    author: 'Mel A.'
+  },
+  {
+    text: `This app is essential for tracking our pup's day. My wife and I are able to keep her bathroom activities straight so we know whether she's acting out because she might have to go to the bathroom or she's just being mischievous! When she ate something that caused her to be sick, we were able to show the vet just how many bowel movements she had in the last 48 hours. We love being able to check the reports and statistics too! All around, the experience using this app has been great!`,
+    author: 'Zan P.'
+  },
+  {
+    text: `It’s worked great to keep track of the intake and “outtake” of our senior dog. It’s also great for keeping track of monthly tick treatments and exercise too. That way we have a central location to check if the dog has been walked in our busy household.`,
+    author: 'Penny M.'
+  }
 ];
 
 export default function Quotes() {

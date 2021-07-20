@@ -57,8 +57,9 @@ export default function NavBar() {
             className="navbar-logo-anchor"
             to={ location.pathname === '/' ? '' : '/' }
             onClick={ handleLogoClick }
+            aria-label="Home"
           >
-            <img className="navbar-logo" src="https://s3-us-west-1.amazonaws.com/doglog-media/DogLogIcon_Red.png" loading="lazy" />
+            <img className="navbar-logo" src="https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/DogLogIcon_Red.png" loading="lazy" aria-hidden="true" />
           </Link>
           <button
             type="button"
