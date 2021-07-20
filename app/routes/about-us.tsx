@@ -2,7 +2,10 @@ import type { LinksFunction, MetaFunction } from 'remix';
 import styles from '../styles/routes/about-us.css';
 
 export let links: LinksFunction = () => {
-  return [{ rel: 'stylesheet', href: styles }];
+  return [
+    { rel: 'stylesheet', href: styles },
+    { rel: 'canonical', href: 'https://www.doglogapp.com/about-us' }
+  ];
 };
 
 export let meta: MetaFunction = () => {

@@ -5,7 +5,10 @@ import { Article } from '../components';
 import styles from '../styles/routes/blog.css';
 
 export let links: LinksFunction = () => {
-  return [{ rel: 'stylesheet', href: styles }];
+  return [
+    { rel: 'stylesheet', href: styles },
+    { rel: 'canonical', href: 'https://www.doglogapp.com/blog' }
+  ];
 };
 
 export function headers() {

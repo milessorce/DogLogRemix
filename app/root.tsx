@@ -21,7 +21,6 @@ function Document({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"></meta>
-        <link rel="canonical" href="https://www.doglogapp.com/"></link>
         <meta name="keywords" content="dog, dogs, pet, pets, app, application, petcare, mobile, track, tracking, tracker, activities, blog, doglog, log, doge, fetch, rover, walk, walking, walker, pee, poop, vet, happy, healthy, safe, pup, puppy, schedule, simple, reminder, reminders, treat, treats, medicine, meal"></meta>
         <meta property="og:type" content="website"></meta>
         <meta property="og:title" content="DogLog: Track and coordinate your pet's activities and health"></meta>

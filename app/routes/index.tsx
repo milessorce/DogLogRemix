@@ -12,7 +12,8 @@ export let links: LinksFunction = () => {
     { rel: 'stylesheet', href: styles },
     { rel: 'stylesheet', href: 'https://unpkg.com/react-responsive-carousel@3.2.19/lib/styles/carousel.min.css' },
     { rel: 'preload', href: 'https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto,q_50/DogLog/header-image-blurred.jpg', as: 'image' },
-    { rel: 'preload', href: 'https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/header-image.jpg', as: 'image' }
+    { rel: 'preload', href: 'https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/header-image.jpg', as: 'image' },
+    { rel: 'canonical', href: 'https://www.doglogapp.com/' }
   ];
 };
 
