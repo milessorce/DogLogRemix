@@ -1,5 +1,5 @@
 {
-  "version": "69c7121a",
+  "version": "825d7575",
   "entry": {
     "module": "/build/entry.client-2B7WAZ4P.js",
     "imports": [
@@ -13,7 +13,7 @@
     "root": {
       "id": "root",
       "path": "/",
-      "module": "/build/root-GXN3PS5K.js",
+      "module": "/build/root-IPXZXUPS.js",
       "imports": [
         "/build/_shared/chunk-ZAO4JBRY.js"
       ],
@@ -57,5 +57,5 @@
       "hasLoader": false
     }
   },
-  "url": "/build/manifest-69C7121A.js"
+  "url": "/build/manifest-825D7575.js"
 }

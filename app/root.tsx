@@ -32,7 +32,7 @@ function Document({ children }: { children: React.ReactNode }) {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap" type="text/css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossOrigin="anonymous"></link>
-        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-863XK73Y70"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-863XK73Y70"></script>
         <script
           dangerouslySetInnerHTML={{ __html: `
             window.dataLayer = window.dataLayer || [];
@@ -40,7 +40,7 @@ function Document({ children }: { children: React.ReactNode }) {
             gtag('js', new Date());
             gtag('config', 'G-863XK73Y70');`
           }}
-        /> */}
+        />
         <Meta />
         <Links />
       </head>
