@@ -116,9 +116,10 @@ var Article = (0, import_react.forwardRef)(({feed, post}, ref) => {
     rel: "noreferrer"
   }, /* @__PURE__ */ React.createElement("img", {
     className: "article__author-logo",
-    src: feed.image,
+    src: "https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto,w_28/DogLog/DogLogIcon.png",
     loading: "lazy",
-    alt: ""
+    alt: "",
+    width: "28"
   }), /* @__PURE__ */ React.createElement("span", {
     className: "article__author-link"
   }, "DogLog Blog"))));

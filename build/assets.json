@@ -1,5 +1,5 @@
 {
-  "version": "16b5e0bb",
+  "version": "e899bbc9",
   "entry": {
     "module": "/build/entry.client-2B7WAZ4P.js",
     "imports": [
@@ -13,9 +13,9 @@
     "root": {
       "id": "root",
       "path": "/",
-      "module": "/build/root-MDY7VPHK.js",
+      "module": "/build/root-3G6J33NQ.js",
       "imports": [
-        "/build/_shared/chunk-EZ4BRIVW.js"
+        "/build/_shared/chunk-H47WGSS4.js"
       ],
       "hasAction": false,
       "hasLoader": false
@@ -43,7 +43,7 @@
       "parentId": "root",
       "path": "blog",
       "caseSensitive": false,
-      "module": "/build/routes/blog-3FYIY56P.js",
+      "module": "/build/routes/blog-QXVEGOW5.js",
       "hasAction": false,
       "hasLoader": true
     },
@@ -52,10 +52,10 @@
       "parentId": "root",
       "path": "/",
       "caseSensitive": false,
-      "module": "/build/routes/index-QUVUY24O.js",
+      "module": "/build/routes/index-CQCVWEGR.js",
       "hasAction": false,
       "hasLoader": false
     }
   },
-  "url": "/build/manifest-16B5E0BB.js"
+  "url": "/build/manifest-E899BBC9.js"
 }
