@@ -1124,7 +1124,7 @@ function useEnvDetection(navigator2) {
 }
 
 // app/styles/routes/index.css
-var routes_default = "/build/_assets/index-UGUBCOY2.css";
+var routes_default = "/build/_assets/index-6WZOG4O4.css";
 
 // route-module:/Users/macbookpro/Desktop/Projects/DogLog Repos/doglog-remix-0.17/app/routes/index.tsx
 var import_react14 = __toModule(require("react"));

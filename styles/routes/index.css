@@ -88,25 +88,32 @@ $doglog-box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     position: sticky;
     animation: fadeIn 2s forwards;
     top: 20%;
+    .header-app-store-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     @media all and (max-width: 719px) {
       top: 10%;
       width: 80%;
       margin-left: 10%;
       margin-right: 10%;
       text-align: center;
-      .header-app-store-container {
-        justify-content: center;
-      }
     }
     @media all and (min-width: 540px) and (max-width: 1280px) {
       width: 27rem;
       margin-left: 10%;
-      text-align: left;
+      text-align: center;
       margin-top: -1rem;
     }
     @media all and (min-width: 1281px) {
       width: 32rem;
       margin-left: 15%;
+      .header-app-store-container {
+        flex-direction: row;
+        justify-content: left;
+      }
     }
     @media all and (min-width: 1441px) {
       width: 35%;
@@ -149,7 +156,6 @@ $doglog-box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     .header-app-store-container {
       display: flex;
       gap: 0.5rem;
-      flex-wrap: wrap;
       padding-bottom: 0.5rem;
     }
     .header-image {
