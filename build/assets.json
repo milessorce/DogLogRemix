@@ -1,5 +1,5 @@
 {
-  "version": "4fa9a29d",
+  "version": "ce5833f5",
   "entry": {
     "module": "/build/entry.client-2B7WAZ4P.js",
     "imports": [
@@ -52,10 +52,10 @@
       "parentId": "root",
       "path": "/",
       "caseSensitive": false,
-      "module": "/build/routes/index-GASVWM32.js",
+      "module": "/build/routes/index-PA7M3VAK.js",
       "hasAction": false,
       "hasLoader": false
     }
   },
-  "url": "/build/manifest-4FA9A29D.js"
+  "url": "/build/manifest-CE5833F5.js"
 }
