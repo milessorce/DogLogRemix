@@ -911,6 +911,14 @@ var members = [
     linkedInUrl: "https://www.linkedin.com/in/milessorce/"
   },
   {
+    name: "Liat",
+    title: "Head of Business Development",
+    smallPhotoSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/w_240/DogLog/liat.jpg",
+    mediumPhotoSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/w_256/DogLog/liat.jpg",
+    largePhotoSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/w_288/DogLog/liat.jpg",
+    linkedInUrl: "https://www.linkedin.com/in/liat-marks-8b9586194/"
+  },
+  {
     name: "Emily",
     title: "UI/UX Designer",
     smallPhotoSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/w_240/DogLog/emily.jpg",
@@ -1125,7 +1133,7 @@ function useEnvDetection(navigator2) {
 }
 
 // app/styles/routes/index.css
-var routes_default = "/build/_assets/index-6WZOG4O4.css";
+var routes_default = "/build/_assets/index-2NAVSF2W.css";
 
 // route-module:/Users/macbookpro/Desktop/Projects/DogLog Repos/doglog-remix-0.17/app/routes/index.tsx
 var import_react14 = __toModule(require("react"));
@@ -1146,7 +1154,7 @@ function headers4() {
 }
 var meta4 = () => {
   return {
-    title: "DogLog",
+    title: `DogLog - Track and coordinate your pet's activities and health`,
     description: `Track your pet's health and wellbeing. Coordinate pet-related tasks. Organize your pet's life and be the best pet owner you can be.`
   };
 };

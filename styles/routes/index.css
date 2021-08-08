@@ -199,6 +199,11 @@ $doglog-box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 
   &--features {
     padding-bottom: 6rem;
+    @media all and (max-width: 992px) {
+      .section-subheader {
+        margin-bottom: 0;
+      }
+    }
     .features-list-container {
       min-height: 29.875rem;
       display: flex;

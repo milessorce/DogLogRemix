@@ -297,6 +297,12 @@
     padding-bottom: 6rem;
   }
 
+@media all and (max-width: 992px) {
+      .section--features .section-subheader {
+        margin-bottom: 0;
+      }
+    }
+
 .section--features .features-list-container {
       min-height: 29.875rem;
       display: flex;

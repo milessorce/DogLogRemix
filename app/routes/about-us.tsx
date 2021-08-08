@@ -55,6 +55,14 @@ const members = [
     linkedInUrl: 'https://www.linkedin.com/in/milessorce/'
   },
   {
+    name: 'Liat',
+    title: 'Head of Business Development',
+    smallPhotoSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/w_240/DogLog/liat.jpg',
+    mediumPhotoSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/w_256/DogLog/liat.jpg',
+    largePhotoSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/w_288/DogLog/liat.jpg',
+    linkedInUrl: 'https://www.linkedin.com/in/liat-marks-8b9586194/'
+  },
+  {
     name: 'Emily',
     title: 'UI/UX Designer',
     smallPhotoSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/w_240/DogLog/emily.jpg',

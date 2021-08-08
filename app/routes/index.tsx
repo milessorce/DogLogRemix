@@ -25,7 +25,7 @@ export function headers() {
 
 export let meta: MetaFunction = () => {
   return {
-    title: 'DogLog',
+    title: `DogLog - Track and coordinate your pet's activities and health`,
     description: `Track your pet's health and wellbeing. Coordinate pet-related tasks. Organize your pet's life and be the best pet owner you can be.`
   };
 }
