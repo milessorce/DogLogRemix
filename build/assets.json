@@ -1,21 +1,21 @@
 {
-  "version": "8b910bf7",
+  "version": "33a4ca1b",
   "entry": {
-    "module": "/build/entry.client-YRPJ3LU2.js",
+    "module": "/build/entry.client-2B7WAZ4P.js",
     "imports": [
-      "/build/_shared/chunk-5K2ZX34P.js",
-      "/build/_shared/chunk-7XWNKLS6.js",
-      "/build/_shared/chunk-DWKPCN7D.js",
-      "/build/_shared/chunk-V2DFFDY4.js"
+      "/build/_shared/chunk-4PLYVGHX.js",
+      "/build/_shared/chunk-PKQAPRJL.js",
+      "/build/_shared/chunk-JM6RBIBN.js",
+      "/build/_shared/chunk-DOM5QJLA.js"
     ]
   },
   "routes": {
     "root": {
       "id": "root",
       "path": "/",
-      "module": "/build/root-L3TJVLLR.js",
+      "module": "/build/root-J2HMIEEV.js",
       "imports": [
-        "/build/_shared/chunk-YJYHSR3C.js"
+        "/build/_shared/chunk-AOFE47GA.js"
       ],
       "hasAction": false,
       "hasLoader": false
@@ -25,7 +25,7 @@
       "parentId": "root",
       "path": "*",
       "caseSensitive": false,
-      "module": "/build/routes/404-ZON4ZAYH.js",
+      "module": "/build/routes/404-5PM7ZY5Y.js",
       "hasAction": false,
       "hasLoader": true
     },
@@ -34,7 +34,7 @@
       "parentId": "root",
       "path": "about-us",
       "caseSensitive": false,
-      "module": "/build/routes/about-us-QUN5XXEW.js",
+      "module": "/build/routes/about-us-LFB5FM6F.js",
       "hasAction": false,
       "hasLoader": false
     },
@@ -43,7 +43,7 @@
       "parentId": "root",
       "path": "blog",
       "caseSensitive": false,
-      "module": "/build/routes/blog-6EEGCZ7E.js",
+      "module": "/build/routes/blog-GQT2HBRX.js",
       "hasAction": false,
       "hasLoader": true
     },
@@ -52,10 +52,19 @@
       "parentId": "root",
       "path": "/",
       "caseSensitive": false,
-      "module": "/build/routes/index-CKTZ7WVJ.js",
+      "module": "/build/routes/index-T6N7XCFN.js",
+      "hasAction": false,
+      "hasLoader": false
+    },
+    "routes/media": {
+      "id": "routes/media",
+      "parentId": "root",
+      "path": "media",
+      "caseSensitive": false,
+      "module": "/build/routes/media-4NCZEMU2.js",
       "hasAction": false,
       "hasLoader": false
     }
   },
-  "url": "/build/manifest-8B910BF7.js"
+  "url": "/build/manifest-33A4CA1B.js"
 }

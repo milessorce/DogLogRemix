@@ -6,6 +6,7 @@ const links = [
   { path: '/#features', text: 'FEATURES' },
   { path: '/about-us', text: 'ABOUT US' },
   { path: '/blog', text: 'BLOG' },
+  { path: '/media', text: 'MEDIA' },
 ];
 
 export default function NavBar() {

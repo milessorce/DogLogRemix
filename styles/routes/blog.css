@@ -41,6 +41,9 @@
     &:visited {
       color: #333
     }
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__author {

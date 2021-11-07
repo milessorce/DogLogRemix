@@ -23,7 +23,7 @@ $doglog-box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 
 .hero-header {
   will-change: background-image;
-  background-image: url(https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto,q_50/DogLog/header-image-blurred.jpg), url(https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/header-image.jpg);
+  background-image: url(https://res.cloudinary.com/dyrrwpemp/image/upload/e_blur:100/v1636252090/DogLog/header-image-small.jpg), url(https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/header-image.jpg);
   background-position: 0% 0%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,10 +32,13 @@ $doglog-box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   height: 100vh;
   width: 100vw;
   will-change: background-position, background-image;
-  transition: background-position ease 0.75s, background-image ease 1s;
+  transition: background-position ease 0.75s, background-image ease 0.25s;
   animation: fadeIn 0.5s forwards;
   padding-top: 6rem;
   position: relative;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
   @media all and (max-width: 719px) {
     background-position-x: 0%;
   }

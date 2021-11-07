@@ -18,7 +18,9 @@ export default function Hero() {
   }, []);
 
   useEffect(() => {
-    rootRef.current.style.backgroundImage = `url(https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/header-image.jpg)`;
+    setTimeout(() => {
+      rootRef.current.style.backgroundImage = `url(https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/header-image.jpg)`;
+    }, 100)
   }, []);
 
   return (

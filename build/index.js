@@ -385,6 +385,10 @@ var links = [
   {
     path: "/blog",
     text: "Blog"
+  },
+  {
+    path: "/media",
+    text: "Media"
   }
 ];
 function Footer() {
@@ -464,7 +468,9 @@ function Hero() {
     };
   }, []);
   (0, import_react7.useEffect)(() => {
-    rootRef.current.style.backgroundImage = `url(https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/header-image.jpg)`;
+    setTimeout(() => {
+      rootRef.current.style.backgroundImage = `url(https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/header-image.jpg)`;
+    }, 100);
   }, []);
   return /* @__PURE__ */ React.createElement("section", {
     id: "home",
@@ -559,7 +565,8 @@ function debounce(func, waitMilliseconds = 50, options = {}) {
 var links2 = [
   {path: "/#features", text: "FEATURES"},
   {path: "/about-us", text: "ABOUT US"},
-  {path: "/blog", text: "BLOG"}
+  {path: "/blog", text: "BLOG"},
+  {path: "/media", text: "MEDIA"}
 ];
 function NavBar() {
   const isBrowser = typeof window !== "undefined";
@@ -730,7 +737,7 @@ function ScrollToTop() {
 }
 
 // app/styles/global.css
-var global_default = "/build/_assets/global-LB6PDHT4.css";
+var global_default = "/build/_assets/global-F4YKCWBE.css";
 
 // route-module:/Users/macbookpro/Desktop/Projects/DogLog Repos/doglog-remix-0.17/app/root.tsx
 var links3 = () => {
@@ -1022,7 +1029,7 @@ var import_react12 = __toModule(require("react"));
 var import_remix4 = __toModule(require("remix"));
 
 // app/styles/routes/blog.css
-var blog_default = "/build/_assets/blog-JBEQRF3O.css";
+var blog_default = "/build/_assets/blog-2PUFGIYO.css";
 
 // route-module:/Users/macbookpro/Desktop/Projects/DogLog Repos/doglog-remix-0.17/app/routes/blog.tsx
 var links6 = () => {
@@ -1133,7 +1140,7 @@ function useEnvDetection(navigator2) {
 }
 
 // app/styles/routes/index.css
-var routes_default = "/build/_assets/index-2NAVSF2W.css";
+var routes_default = "/build/_assets/index-ZU5TUHLP.css";
 
 // route-module:/Users/macbookpro/Desktop/Projects/DogLog Repos/doglog-remix-0.17/app/routes/index.tsx
 var import_react14 = __toModule(require("react"));
@@ -1142,7 +1149,7 @@ var links7 = () => {
     {rel: "preconnect", href: "https://res.cloudinary.com/"},
     {rel: "stylesheet", href: routes_default},
     {rel: "stylesheet", href: "https://unpkg.com/react-responsive-carousel@3.2.19/lib/styles/carousel.min.css"},
-    {rel: "preload", href: "https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto,q_50/DogLog/header-image-blurred.jpg", as: "image"},
+    {rel: "preload", href: "https://res.cloudinary.com/dyrrwpemp/image/upload/e_blur:100/v1636252090/DogLog/header-image-small.jpg", as: "image"},
     {rel: "preload", href: "https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/header-image.jpg", as: "image"},
     {rel: "canonical", href: "https://www.doglogapp.com/"}
   ];
@@ -1170,6 +1177,96 @@ function Index() {
   return /* @__PURE__ */ React.createElement(EnvContext.Provider, {
     value: env
   }, /* @__PURE__ */ React.createElement(Hero, null), /* @__PURE__ */ React.createElement(Features, null), /* @__PURE__ */ React.createElement(MoreFeatures, null), /* @__PURE__ */ React.createElement(Screenshots, null), /* @__PURE__ */ React.createElement(Quotes, null));
+}
+
+// route-module:/Users/macbookpro/Desktop/Projects/DogLog Repos/doglog-remix-0.17/app/routes/media.tsx
+var media_exports = {};
+__export(media_exports, {
+  default: () => Media,
+  headers: () => headers5,
+  links: () => links8,
+  meta: () => meta5
+});
+
+// app/styles/routes/media.css
+var media_default = "/build/_assets/media-BIZ2DEYX.css";
+
+// route-module:/Users/macbookpro/Desktop/Projects/DogLog Repos/doglog-remix-0.17/app/routes/media.tsx
+var links8 = () => {
+  return [
+    {rel: "stylesheet", href: media_default},
+    {rel: "canonical", href: "https://www.doglogapp.com/media"}
+  ];
+};
+function headers5() {
+  return {
+    "Cache-Control": "max-age=84600, public"
+  };
+}
+var meta5 = () => {
+  return {
+    title: "DogLog - Media",
+    description: "DogLog in the media"
+  };
+};
+var articles = [
+  {
+    imageSrc: "https://www.doobert.com/wp-content/themes/wt_metro_child/img/logo-doobert.svg",
+    articleUrl: "https://www.doobert.com/doglog-app-lynn-marks-gideon-marks/",
+    title: "DogLog on the Animal Innovations Show Podcast",
+    date: "August 2021"
+  },
+  {
+    imageSrc: "https://static.wixstatic.com/media/fa7e92_9650e9722b274a41b367ce39eed506b3~mv2.png/v1/fill/w_200,h_156,al_c,q_85,usm_0.66_1.00_0.01/MellaLogo-01.webp",
+    articleUrl: "https://www.mella.ai/podcast/episode/22f8161e/21-how-can-you-track-your-pets-activities-lynn-and-gideon-marks",
+    title: "DogLog on the Mella Podcast",
+    date: "March 2021"
+  },
+  {
+    imageSrc: "https://fox40.com/wp-content/uploads/sites/13/2021/05/FOX40_Logo_Horizontal_GENERIC_Color.png",
+    articleUrl: "https://fox40.com/news/local-news/local-siblings-create-app-to-help-busy-dog-owners-keep-track-of-their-pets-schedules/",
+    title: "Local Siblings Create App to Help Busy Dog Owners Keep Track of Their Pet\u2019s Schedules",
+    date: "November 2018"
+  },
+  {
+    imageSrc: "https://bloximages.newyork1.vip.townnews.com/losaltosonline.com/content/tncms/custom/image/37c9728a-8666-11eb-8535-570adb2075d9.png?resize=1200%2C187",
+    articleUrl: "https://www.losaltosonline.com/business/local-siblings-create-pet-tracker-app-inspired-by-their-own-dog/article_ee743a9f-2744-503d-99fe-941cf63a64ff.html",
+    title: "Local siblings create pet tracker app inspired by their own dog",
+    date: "August 2018"
+  }
+];
+function Article2({imageSrc, articleUrl, title, date}) {
+  return /* @__PURE__ */ React.createElement("div", {
+    className: "article"
+  }, /* @__PURE__ */ React.createElement("a", {
+    className: "article__link",
+    href: articleUrl,
+    target: "_blank"
+  }), /* @__PURE__ */ React.createElement("img", {
+    className: "article__image",
+    src: imageSrc,
+    alt: title
+  }), /* @__PURE__ */ React.createElement("div", {
+    className: "article__content-container"
+  }, /* @__PURE__ */ React.createElement("h3", {
+    className: "article__date"
+  }, date), /* @__PURE__ */ React.createElement("h2", {
+    className: "article__title"
+  }, title)));
+}
+function Media() {
+  const isBrowser = typeof window !== "undefined";
+  return /* @__PURE__ */ React.createElement("section", {
+    className: "section section--media"
+  }, /* @__PURE__ */ React.createElement("div", {
+    className: "section-container section-container--media"
+  }, /* @__PURE__ */ React.createElement("h1", {
+    className: "section-header"
+  }, "Media"), /* @__PURE__ */ React.createElement("div", {
+    className: "media__articles"
+  }, articles.map((article) => /* @__PURE__ */ React.createElement(Article2, __objSpread(__objSpread({}, article), {
+    key: article.articleUrl
+  }))))));
 }
 
 // <stdin>
@@ -1210,6 +1307,13 @@ var routes = {
     path: "/",
     caseSensitive: false,
     module: routes_exports
+  },
+  "routes/media": {
+    id: "routes/media",
+    parentId: "root",
+    path: "media",
+    caseSensitive: false,
+    module: media_exports
   }
 };
 // Annotate the CommonJS export names for ESM import in node:

@@ -47,6 +47,10 @@
       color: #333
     }
 
+.article__link:hover {
+      text-decoration: underline;
+    }
+
 .article__author {
     color: #333;
     display: flex;
