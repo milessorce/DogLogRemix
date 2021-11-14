@@ -1,5 +1,5 @@
 {
-  "version": "60f8e65c",
+  "version": "a49fc31c",
   "entry": {
     "module": "/build/entry.client-YRPJ3LU2.js",
     "imports": [
@@ -34,7 +34,7 @@
       "parentId": "root",
       "path": "about-us",
       "caseSensitive": false,
-      "module": "/build/routes/about-us-QUN5XXEW.js",
+      "module": "/build/routes/about-us-732I2GVI.js",
       "hasAction": false,
       "hasLoader": false
     },
@@ -52,7 +52,7 @@
       "parentId": "root",
       "path": "/",
       "caseSensitive": false,
-      "module": "/build/routes/index-RKCTAMJQ.js",
+      "module": "/build/routes/index-VUUYTT55.js",
       "hasAction": false,
       "hasLoader": false
     },
@@ -66,5 +66,5 @@
       "hasLoader": false
     }
   },
-  "url": "/build/manifest-60F8E65C.js"
+  "url": "/build/manifest-A49FC31C.js"
 }

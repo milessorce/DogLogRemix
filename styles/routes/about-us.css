@@ -4,7 +4,6 @@ $doglog-box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 .section--our-family {
   padding-top: 6rem;
   .section-container {
-    animation: fadeIn 1.5s;
     @media all and (min-width: 1200px) {
       width: 72rem;
     }

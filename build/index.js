@@ -864,7 +864,7 @@ __export(about_us_exports, {
 });
 
 // app/styles/routes/about-us.css
-var about_us_default = "/build/_assets/about-us-YSO7YOP2.css";
+var about_us_default = "/build/_assets/about-us-E2SYTVRB.css";
 
 // route-module:/Users/macbookpro/Desktop/Projects/DogLog Repos/doglog-remix-0.17/app/routes/about-us.tsx
 var links5 = () => {
@@ -1140,7 +1140,7 @@ function useEnvDetection(navigator2) {
 }
 
 // app/styles/routes/index.css
-var routes_default = "/build/_assets/index-ZU5TUHLP.css";
+var routes_default = "/build/_assets/index-5P53R5A7.css";
 
 // route-module:/Users/macbookpro/Desktop/Projects/DogLog Repos/doglog-remix-0.17/app/routes/index.tsx
 var import_react14 = __toModule(require("react"));

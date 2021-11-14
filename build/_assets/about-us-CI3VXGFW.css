@@ -1,6 +1,10 @@
 .section--our-family {
   padding-top: 6rem;
 }
+  .section--our-family .section-container {
+    -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+  }
   @media all and (min-width: 1200px) {
   .section--our-family .section-container {
       width: 72rem
