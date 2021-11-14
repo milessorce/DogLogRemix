@@ -1189,7 +1189,7 @@ __export(media_exports, {
 });
 
 // app/styles/routes/media.css
-var media_default = "/build/_assets/media-BIZ2DEYX.css";
+var media_default = "/build/_assets/media-3EUQ5VV6.css";
 
 // route-module:/Users/macbookpro/Desktop/Projects/DogLog Repos/doglog-remix-0.17/app/routes/media.tsx
 var links8 = () => {
@@ -1210,6 +1210,12 @@ var meta5 = () => {
   };
 };
 var articles = [
+  {
+    imageSrc: "https://appoftheday.downloadastro.com/wp-content/themes/appoftheday/assets/img/logo-01.png",
+    articleUrl: "https://appoftheday.downloadastro.com/app/doglog-track-your-pets-life/",
+    title: "Interview with App of the Day",
+    date: "November 2021"
+  },
   {
     imageSrc: "https://www.doobert.com/wp-content/themes/wt_metro_child/img/logo-doobert.svg",
     articleUrl: "https://www.doobert.com/doglog-app-lynn-marks-gideon-marks/",

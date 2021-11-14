@@ -9,7 +9,8 @@
     "start": "remix-serve build",
     "watch:css": "postcss styles --base styles --dir app/styles -w",
     "build:css": "postcss styles --base styles --dir app/styles --env production",
-    "deploy": "vercel"
+    "deploy": "vercel",
+    "deploy-prod": "vercel --prod"
   },
   "dependencies": {
     "@remix-run/node": "0.17.0",
@@ -22,7 +23,7 @@
     "react-responsive-carousel": "3.2.19",
     "react-router-dom": "^6.0.0-beta.0",
     "remix": "0.17.0",
-    "vercel": "^23.0.1"
+    "vercel": "^23.1.2"
   },
   "devDependencies": {
     "@remix-run/dev": "0.17.0",

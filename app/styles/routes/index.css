@@ -122,6 +122,7 @@
     opacity: 0;
     width: 50%;
     text-align: left;
+    position: -webkit-sticky;
     position: sticky;
     -webkit-animation: fadeIn 2s forwards;
             animation: fadeIn 2s forwards;

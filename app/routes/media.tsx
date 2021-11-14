@@ -32,6 +32,12 @@ interface ArticleProps {
 
 const articles = [
   {
+    imageSrc: 'https://appoftheday.downloadastro.com/wp-content/themes/appoftheday/assets/img/logo-01.png',
+    articleUrl: 'https://appoftheday.downloadastro.com/app/doglog-track-your-pets-life/',
+    title: 'Interview with App of the Day',
+    date: 'November 2021'
+  },
+  {
     imageSrc: 'https://www.doobert.com/wp-content/themes/wt_metro_child/img/logo-doobert.svg',
     articleUrl: 'https://www.doobert.com/doglog-app-lynn-marks-gideon-marks/',
     title: 'DogLog on the Animal Innovations Show Podcast',
@@ -54,7 +60,7 @@ const articles = [
     articleUrl: 'https://www.losaltosonline.com/business/local-siblings-create-pet-tracker-app-inspired-by-their-own-dog/article_ee743a9f-2744-503d-99fe-941cf63a64ff.html',
     title: 'Local siblings create pet tracker app inspired by their own dog',
     date: 'August 2018'
-  }
+  },
 ];
 
 function Article({ imageSrc, articleUrl, title, date }: ArticleProps) {
