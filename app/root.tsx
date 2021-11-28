@@ -15,6 +15,12 @@ export function headers() {
   };
 }
 
+declare global {
+  interface Window {
+    gtag: any;
+  }
+}
+
 function Document({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">

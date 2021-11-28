@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { useRouteData } from 'remix';
 import type { LoaderFunction, LinksFunction, MetaFunction } from 'remix';
+import { useLocation } from 'react-router-dom';
 import { Article } from '../components';
 import styles from '../styles/routes/blog.css';
 
@@ -59,6 +60,7 @@ interface Data {
 export default function Blog() {
   const isBrowser = typeof window !== 'undefined';
   const { feed, items }: Data = useRouteData();
+  const location = useLocation();
   const [ page, setPage ] = useState<number>(1);
   const lastPageIndex = items.length % 3 ? 3 * page - items.length % 3 : 3 * page - 1;
   const articleRef = useRef<HTMLElement>(null!);
@@ -77,6 +79,10 @@ export default function Blog() {
       articleObserver.current?.disconnect();
     };
   }, [ articleRef.current ]);
+
+  useEffect(() => {
+    window.gtag?.('send', 'pageview');
+  }, [ location ]);
 
   return (
     <section className="section section--blog">

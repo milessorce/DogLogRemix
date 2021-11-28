@@ -1,4 +1,6 @@
+import { useEffect } from 'react';
 import type { LinksFunction, MetaFunction } from 'remix';
+import { useLocation } from 'react-router-dom';
 import styles from '../styles/routes/about-us.css';
 
 export let links: LinksFunction = () => {
@@ -87,6 +89,12 @@ const members = [
 ];
 
 export default function AboutUs () {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.gtag?.('send', 'pageview');
+  }, [ location ]);
+
   return (
     <div id="about-us" className="about-us">
       <section id="our-family" className="section section--animated section--our-family">

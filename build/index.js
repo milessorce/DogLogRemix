@@ -862,6 +862,8 @@ __export(about_us_exports, {
   links: () => links5,
   meta: () => meta2
 });
+var import_react12 = __toModule(require("react"));
+var import_react_router_dom5 = __toModule(require("react-router-dom"));
 
 // app/styles/routes/about-us.css
 var about_us_default = "/build/_assets/about-us-E2SYTVRB.css";
@@ -949,6 +951,11 @@ var members = [
   }
 ];
 function AboutUs() {
+  const location = (0, import_react_router_dom5.useLocation)();
+  (0, import_react12.useEffect)(() => {
+    var _a;
+    (_a = window.gtag) == null ? void 0 : _a.call(window, "send", "pageview");
+  }, [location]);
   return /* @__PURE__ */ React.createElement("div", {
     id: "about-us",
     className: "about-us"
@@ -1025,8 +1032,9 @@ __export(blog_exports, {
   loader: () => loader2,
   meta: () => meta3
 });
-var import_react12 = __toModule(require("react"));
+var import_react13 = __toModule(require("react"));
 var import_remix4 = __toModule(require("remix"));
+var import_react_router_dom6 = __toModule(require("react-router-dom"));
 
 // app/styles/routes/blog.css
 var blog_default = "/build/_assets/blog-2PUFGIYO.css";
@@ -1057,16 +1065,17 @@ var loader2 = async () => {
 function Blog() {
   const isBrowser = typeof window !== "undefined";
   const {feed, items} = (0, import_remix4.useRouteData)();
-  const [page, setPage] = (0, import_react12.useState)(1);
+  const location = (0, import_react_router_dom6.useLocation)();
+  const [page, setPage] = (0, import_react13.useState)(1);
   const lastPageIndex = items.length % 3 ? 3 * page - items.length % 3 : 3 * page - 1;
-  const articleRef = (0, import_react12.useRef)(null);
-  const articleObserver = isBrowser ? (0, import_react12.useRef)(new IntersectionObserver(([entry2], observer) => {
+  const articleRef = (0, import_react13.useRef)(null);
+  const articleObserver = isBrowser ? (0, import_react13.useRef)(new IntersectionObserver(([entry2], observer) => {
     if (entry2.isIntersecting) {
       articleRef.current && observer.unobserve(articleRef.current);
       setPage((page2) => page2 + 1);
     }
-  }, {threshold: 0.6})) : (0, import_react12.useRef)(null);
-  (0, import_react12.useEffect)(() => {
+  }, {threshold: 0.6})) : (0, import_react13.useRef)(null);
+  (0, import_react13.useEffect)(() => {
     if (articleObserver.current && articleRef.current) {
       articleObserver.current.observe(articleRef.current);
     }
@@ -1075,6 +1084,10 @@ function Blog() {
       (_a = articleObserver.current) == null ? void 0 : _a.disconnect();
     };
   }, [articleRef.current]);
+  (0, import_react13.useEffect)(() => {
+    var _a;
+    (_a = window.gtag) == null ? void 0 : _a.call(window, "send", "pageview");
+  }, [location]);
   return /* @__PURE__ */ React.createElement("section", {
     className: "section section--blog"
   }, /* @__PURE__ */ React.createElement("div", {
@@ -1097,10 +1110,10 @@ __export(routes_exports, {
   links: () => links7,
   meta: () => meta4
 });
-var import_react_router_dom5 = __toModule(require("react-router-dom"));
+var import_react_router_dom7 = __toModule(require("react-router-dom"));
 
 // app/hooks/useEnvDetection.ts
-var import_react13 = __toModule(require("react"));
+var import_react14 = __toModule(require("react"));
 
 // app/utilties/detectMobile.ts
 function detectMobile() {
@@ -1113,7 +1126,7 @@ function detectMobile() {
 
 // app/hooks/useEnvDetection.ts
 function useEnvDetection(navigator2) {
-  return (0, import_react13.useMemo)(() => {
+  return (0, import_react14.useMemo)(() => {
     if (navigator2) {
       let browser = "";
       if (navigator2.userAgent.includes("Chrome")) {
@@ -1143,7 +1156,7 @@ function useEnvDetection(navigator2) {
 var routes_default = "/build/_assets/index-5P53R5A7.css";
 
 // route-module:/Users/macbookpro/Desktop/Projects/DogLog Repos/doglog-remix-0.17/app/routes/index.tsx
-var import_react14 = __toModule(require("react"));
+var import_react15 = __toModule(require("react"));
 var links7 = () => {
   return [
     {rel: "preconnect", href: "https://res.cloudinary.com/"},
@@ -1167,8 +1180,12 @@ var meta4 = () => {
 };
 function Index() {
   const env = useEnvDetection(typeof navigator === "undefined" ? null : navigator);
-  const {pathname, hash} = (0, import_react_router_dom5.useLocation)();
-  (0, import_react14.useEffect)(() => {
+  const {pathname, hash} = (0, import_react_router_dom7.useLocation)();
+  (0, import_react15.useEffect)(() => {
+    var _a;
+    (_a = window.gtag) == null ? void 0 : _a.call(window, "send", "pageview");
+  }, [pathname]);
+  (0, import_react15.useEffect)(() => {
     if (pathname === "/" && hash === "#features") {
       const features = document.getElementById("features");
       features && features.scrollIntoView({behavior: "smooth"});
@@ -1187,6 +1204,8 @@ __export(media_exports, {
   links: () => links8,
   meta: () => meta5
 });
+var import_react16 = __toModule(require("react"));
+var import_react_router_dom8 = __toModule(require("react-router-dom"));
 
 // app/styles/routes/media.css
 var media_default = "/build/_assets/media-3EUQ5VV6.css";
@@ -1248,6 +1267,11 @@ var articles = [
   }
 ];
 function Article2({imageSrc, articleUrl, title, date}) {
+  const location = (0, import_react_router_dom8.useLocation)();
+  (0, import_react16.useEffect)(() => {
+    var _a;
+    (_a = window.gtag) == null ? void 0 : _a.call(window, "send", "pageview");
+  }, [location]);
   return /* @__PURE__ */ React.createElement("div", {
     className: "article"
   }, /* @__PURE__ */ React.createElement("a", {

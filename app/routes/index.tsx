@@ -35,6 +35,10 @@ export default function Index() {
   const { pathname, hash } = useLocation();
 
   useEffect(() => {
+    window.gtag?.('send', 'pageview');
+  }, [ pathname ]);
+
+  useEffect(() => {
     if (pathname === '/' && hash === '#features') {
       const features = document.getElementById('features');
       features && features.scrollIntoView({ behavior: 'smooth' });

@@ -1,4 +1,6 @@
+import { useEffect } from 'react';
 import type { LinksFunction, MetaFunction } from 'remix';
+import { useLocation } from 'react-router-dom';
 import styles from '../styles/routes/media.css';
 
 export let links: LinksFunction = () => {
@@ -68,6 +70,12 @@ const articles = [
 ];
 
 function Article({ imageSrc, articleUrl, title, date }: ArticleProps) {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.gtag?.('send', 'pageview');
+  }, [ location ]);
+
   return (
     <div className="article">
       <a
