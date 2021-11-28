@@ -1,6 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
-import { useRouteData } from 'remix';
-import type { LoaderFunction, LinksFunction, MetaFunction } from 'remix';
+import type { LinksFunction, MetaFunction } from 'remix';
 import styles from '../styles/routes/media.css';
 
 export let links: LinksFunction = () => {
@@ -35,6 +33,12 @@ const articles = [
     imageSrc: 'https://appoftheday.downloadastro.com/wp-content/themes/appoftheday/assets/img/logo-01.png',
     articleUrl: 'https://appoftheday.downloadastro.com/app/doglog-track-your-pets-life/',
     title: 'Interview with App of the Day',
+    date: 'November 2021'
+  },
+  {
+    imageSrc: 'https://res.cloudinary.com/dyrrwpemp/image/upload/v1638129272/DogLog/kiclogo.png',
+    articleUrl: 'https://www.youtube.com/watch?v=zLE79n9vqLc',
+    title: 'DogLog at iPitch 2021',
     date: 'November 2021'
   },
   {
@@ -85,8 +89,6 @@ function Article({ imageSrc, articleUrl, title, date }: ArticleProps) {
 }
 
 export default function Media() {
-  const isBrowser = typeof window !== 'undefined';
-
   return (
     <section className="section section--media">
       <div className="section-container section-container--media">

@@ -1,5 +1,5 @@
 {
-  "version": "a49fc31c",
+  "version": "6e1c65e1",
   "entry": {
     "module": "/build/entry.client-YRPJ3LU2.js",
     "imports": [
@@ -61,10 +61,10 @@
       "parentId": "root",
       "path": "media",
       "caseSensitive": false,
-      "module": "/build/routes/media-BEJJZ2TU.js",
+      "module": "/build/routes/media-VWPRUQWN.js",
       "hasAction": false,
       "hasLoader": false
     }
   },
-  "url": "/build/manifest-A49FC31C.js"
+  "url": "/build/manifest-6E1C65E1.js"
 }

@@ -1217,6 +1217,12 @@ var articles = [
     date: "November 2021"
   },
   {
+    imageSrc: "https://res.cloudinary.com/dyrrwpemp/image/upload/v1638129272/DogLog/kiclogo.png",
+    articleUrl: "https://www.youtube.com/watch?v=zLE79n9vqLc",
+    title: "DogLog at iPitch 2021",
+    date: "November 2021"
+  },
+  {
     imageSrc: "https://www.doobert.com/wp-content/themes/wt_metro_child/img/logo-doobert.svg",
     articleUrl: "https://www.doobert.com/doglog-app-lynn-marks-gideon-marks/",
     title: "DogLog on the Animal Innovations Show Podcast",
@@ -1261,7 +1267,6 @@ function Article2({imageSrc, articleUrl, title, date}) {
   }, title)));
 }
 function Media() {
-  const isBrowser = typeof window !== "undefined";
   return /* @__PURE__ */ React.createElement("section", {
     className: "section section--media"
   }, /* @__PURE__ */ React.createElement("div", {
