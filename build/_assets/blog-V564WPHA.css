@@ -28,6 +28,7 @@
 
 .article__heading:hover {
       text-decoration: underline;
+      color: initial;
     }
 
 .article__image {
@@ -49,7 +50,6 @@
 
 .article__link:hover {
       text-decoration: underline;
-      color: initial;
     }
 
 .article__author {

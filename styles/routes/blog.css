@@ -43,6 +43,7 @@
     }
     &:hover {
       text-decoration: underline;
+      color: initial;
     }
   }
 

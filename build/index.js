@@ -1037,7 +1037,7 @@ var import_remix4 = __toModule(require("remix"));
 var import_react_router_dom6 = __toModule(require("react-router-dom"));
 
 // app/styles/routes/blog.css
-var blog_default = "/build/_assets/blog-2PUFGIYO.css";
+var blog_default = "/build/_assets/blog-BI3CGLCF.css";
 
 // route-module:/Users/macbookpro/Desktop/Projects/DogLog Repos/doglog-remix-0.17/app/routes/blog.tsx
 var links6 = () => {
