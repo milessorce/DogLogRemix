@@ -26,7 +26,7 @@ export let meta: MetaFunction = () => {
 }
 
 export let loader: LoaderFunction = async () => {
-  const res = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@AppDogLog');
+  const res = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://appdoglog.medium.com/feed');
   const json = await res.json();
   return json;
 };
@@ -59,7 +59,7 @@ interface Data {
 
 export default function Blog() {
   const isBrowser = typeof window !== 'undefined';
-  const { feed, items }: Data = useRouteData();
+  const { feed, items = [] }: Data = useRouteData();
   const location = useLocation();
   const [ page, setPage ] = useState<number>(1);
   const lastPageIndex = items.length % 3 ? 3 * page - items.length % 3 : 3 * page - 1;

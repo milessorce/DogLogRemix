@@ -1058,13 +1058,13 @@ var meta3 = () => {
   };
 };
 var loader2 = async () => {
-  const res = await fetch("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@AppDogLog");
+  const res = await fetch("https://api.rss2json.com/v1/api.json?rss_url=https://appdoglog.medium.com/feed");
   const json2 = await res.json();
   return json2;
 };
 function Blog() {
   const isBrowser = typeof window !== "undefined";
-  const {feed, items} = (0, import_remix4.useRouteData)();
+  const {feed, items = []} = (0, import_remix4.useRouteData)();
   const location = (0, import_react_router_dom6.useLocation)();
   const [page, setPage] = (0, import_react13.useState)(1);
   const lastPageIndex = items.length % 3 ? 3 * page - items.length % 3 : 3 * page - 1;

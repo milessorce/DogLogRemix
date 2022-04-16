@@ -1,10 +1,10 @@
 {
-  "version": "41f338fd",
+  "version": "e26f2d5b",
   "entry": {
-    "module": "/build/entry.client-FSRHMPGF.js",
+    "module": "/build/entry.client-LVXUMXMU.js",
     "imports": [
       "/build/_shared/chunk-Y6ZV3AIL.js",
-      "/build/_shared/chunk-4CXRJCRS.js",
+      "/build/_shared/chunk-KXACIKPM.js",
       "/build/_shared/chunk-EW4QN3XZ.js"
     ]
   },
@@ -12,9 +12,9 @@
     "root": {
       "id": "root",
       "path": "/",
-      "module": "/build/root-XAA5QI6J.js",
+      "module": "/build/root-DOJV4UAE.js",
       "imports": [
-        "/build/_shared/chunk-GF3HHOG7.js"
+        "/build/_shared/chunk-LLUZPLNW.js"
       ],
       "hasAction": false,
       "hasLoader": false
@@ -42,7 +42,7 @@
       "parentId": "root",
       "path": "blog",
       "caseSensitive": false,
-      "module": "/build/routes/blog-KFSUHOBI.js",
+      "module": "/build/routes/blog-XZTH7RO5.js",
       "hasAction": false,
       "hasLoader": true
     },
@@ -51,7 +51,7 @@
       "parentId": "root",
       "path": "/",
       "caseSensitive": false,
-      "module": "/build/routes/index-C4S36XR4.js",
+      "module": "/build/routes/index-5ZAKZOEP.js",
       "hasAction": false,
       "hasLoader": false
     },
@@ -65,5 +65,5 @@
       "hasLoader": false
     }
   },
-  "url": "/build/manifest-41F338FD.js"
+  "url": "/build/manifest-E26F2D5B.js"
 }
