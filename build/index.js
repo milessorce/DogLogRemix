@@ -1230,6 +1230,12 @@ var meta5 = () => {
 };
 var articles = [
   {
+    imageSrc: "https://www.truic.com/images/jump-to/startup-savant-jump-to-button.png",
+    articleUrl: "https://startupsavant.com/pet-tech-startup-doglog-origin-story",
+    title: "DogLog on the Startup Savant Podcast",
+    date: "March 2022"
+  },
+  {
     imageSrc: "https://appoftheday.downloadastro.com/wp-content/themes/appoftheday/assets/img/logo-01.png",
     articleUrl: "https://appoftheday.downloadastro.com/app/doglog-track-your-pets-life/",
     title: "Interview with App of the Day",

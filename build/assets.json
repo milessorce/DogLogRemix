@@ -1,10 +1,10 @@
 {
-  "version": "e57866bb",
+  "version": "41f338fd",
   "entry": {
-    "module": "/build/entry.client-LVXUMXMU.js",
+    "module": "/build/entry.client-FSRHMPGF.js",
     "imports": [
       "/build/_shared/chunk-Y6ZV3AIL.js",
-      "/build/_shared/chunk-KXACIKPM.js",
+      "/build/_shared/chunk-4CXRJCRS.js",
       "/build/_shared/chunk-EW4QN3XZ.js"
     ]
   },
@@ -12,9 +12,9 @@
     "root": {
       "id": "root",
       "path": "/",
-      "module": "/build/root-DOJV4UAE.js",
+      "module": "/build/root-XAA5QI6J.js",
       "imports": [
-        "/build/_shared/chunk-LLUZPLNW.js"
+        "/build/_shared/chunk-GF3HHOG7.js"
       ],
       "hasAction": false,
       "hasLoader": false
@@ -42,7 +42,7 @@
       "parentId": "root",
       "path": "blog",
       "caseSensitive": false,
-      "module": "/build/routes/blog-LWCQODVM.js",
+      "module": "/build/routes/blog-KFSUHOBI.js",
       "hasAction": false,
       "hasLoader": true
     },
@@ -51,7 +51,7 @@
       "parentId": "root",
       "path": "/",
       "caseSensitive": false,
-      "module": "/build/routes/index-5ZAKZOEP.js",
+      "module": "/build/routes/index-C4S36XR4.js",
       "hasAction": false,
       "hasLoader": false
     },
@@ -60,10 +60,10 @@
       "parentId": "root",
       "path": "media",
       "caseSensitive": false,
-      "module": "/build/routes/media-X2D3W6BJ.js",
+      "module": "/build/routes/media-XJ3NXQ5T.js",
       "hasAction": false,
       "hasLoader": false
     }
   },
-  "url": "/build/manifest-E57866BB.js"
+  "url": "/build/manifest-41F338FD.js"
 }
