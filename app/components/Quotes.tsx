@@ -4,6 +4,11 @@ import Carousel from './Carousel';
 
 const quotes = [
   {
+    text: `Exciting gadget app to help get the dog-life organized. To my dog parents... this is a digital binder for keeping track of all things about your precious(es). Shareable for when you trust your babies to a friend/sitter. Routines are logged so meds/treats/walks  happen on time (or as
+    a former walker... within a window). Keeps things like chip numbers/vax (vaccination) schedules, /bm (Bowel movement) events (because sometimes that's an issue)/groomer and park appointments, etc. Check it out.`,
+    author: 'Carina Z.'
+  },
+  {
     text: `I use this daily to record our dog's activities, very useful when there's more than one caregiver! Custom events are great. Tried other apps and this was the best one.`,
     author: 'Martin P.'
   },
